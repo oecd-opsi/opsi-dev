@@ -19,7 +19,7 @@
   <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
     <section id="top-section">
-      <div id="image-section" class="col-md-5 col-sm-5 col-xs-12">
+      <div id="image-section" class="col-md-4 col-sm-4 col-xs-12">
         <div class="tookit-image <?php echo (!has_post_thumbnail() ? 'noimg' : ''); ?>">
           <?php
            if ( has_post_thumbnail()) {
@@ -39,7 +39,7 @@
         </div>
       </div>
 
-      <div id="intro-section" class="col-md-6 col-sm-6 col-xs-12">
+      <div id="intro-section" class="col-md-7 col-sm-7 col-xs-12">
 
         <h1 class="toolkit-title">
           <?php the_title(); ?>
