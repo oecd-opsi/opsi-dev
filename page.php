@@ -1,6 +1,3 @@
-
-
-
   <?php
 
       if(is_page_template( 'single-toolkit.php' )) {
@@ -17,6 +14,7 @@
       global $post;
 
   ?>
+
 
 
 
