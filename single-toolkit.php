@@ -96,19 +96,17 @@
       </div>
     </section>
 
+  </article>
 
-              <?php get_template_part( 'blocks' ); ?>
+  <section id="feedback-section" class="col-md-12 col-sm-12 col-xs-12">
 
-              <div class="post_tags">
-                <?php echo get_the_tag_list(); ?>
-              </div>
-          </article>
       <?php comments_template(); ?>
       <?php endwhile; ?>
 
-    </div>
-
-  <?php wp_reset_query(); ?>
+  </section>
 
 
+</div>
+
+<?php wp_reset_query(); ?>
 <?php get_footer(); ?>
