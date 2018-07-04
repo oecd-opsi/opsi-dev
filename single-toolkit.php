@@ -1,4 +1,9 @@
+<?php get_header('toolkits');
+    // note change
+    global $post;
 
+
+  ?>
 
   <div class="col-sm-12">
 
