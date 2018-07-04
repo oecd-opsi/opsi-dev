@@ -2,11 +2,9 @@
     // note change
     global $post;
 
-    $has_sidebar = 0;
+
     $layout = get_post_meta($post->ID, 'layout', true);
-    if($layout != 'fullpage' && is_active_sidebar( 'sidebar' )) {
-      $has_sidebar = 3;
-    }
+
 
   ?>
 
