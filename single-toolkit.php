@@ -1,8 +1,5 @@
 <?php get_header();
     // note change
-    global $post;
-
-    $layout = get_post_meta($post->ID, 'layout', true);
 
 
   ?>
