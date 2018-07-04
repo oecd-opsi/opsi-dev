@@ -56,12 +56,6 @@
                     </a>
                   </div>
                 </div>
-                <div class="col-md-10 col-sm-10 col-xs-12 col-sm-pull-2">
-                  <div class="authormeta">
-                    <?php echo __('Written by', 'opsi'); ?> <?php the_author_posts_link(); ?> <?php echo ($job !='' ? ', ' : ''); ?><?php echo $job; ?>
-                    <?php // TODO: add author description ?>
-                  </div>
-                </div>
               </div>
 
               <div class="single_post_meta">
