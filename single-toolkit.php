@@ -1,8 +1,4 @@
-<?php get_header('toolkits');
-    // note change
 
-
-  ?>
 
   <div class="col-sm-12">
 
