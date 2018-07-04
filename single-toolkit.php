@@ -26,7 +26,7 @@
               <div class="single_img_wrap <?php echo (!has_post_thumbnail() ? 'noimg' : ''); ?>">
                 <?php
                  if ( has_post_thumbnail()) {
-                  $large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id(get_the_ID()), 'medium');
+                  $large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id(get_the_ID()), 'large');
                   $img_info =  wp_get_attachment_metadata( get_post_thumbnail_id(get_the_ID()) );
 
                   echo '
@@ -48,15 +48,7 @@
                 <h2 class="entry-subtitle"><?php echo get_field('subheader'); ?></h2>
               <?php } ?>
 
-              <div class="row">
-                <div class="col-sm-2 col-xs-12 col-sm-push-10">
-                  <div class="text-right-not-xs">
-                    <a href="<?php echo bp_core_get_user_domain( $userid ); ?>" class="single_author_avatar" title="<?php echo $name .' '. __('profile', 'opsi'); ?>">
-                      <?php bp_displayed_user_avatar( array('item_id' => $userid, 'type'=>'full') ); ?>
-                    </a>
-                  </div>
-                </div>
-              </div>
+
 
               <div class="single_post_meta">
                 <div class="row">
