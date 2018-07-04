@@ -12,7 +12,6 @@
 
 
 
-    <div class="col-sm-<?php echo 12 - $has_sidebar; ?> <?php echo ($has_sidebar > 0 ? 'col-sm-pull-3' : ''); ?>">
 
   <?php while ( have_posts() ) : the_post(); $postid = get_the_ID();
 
