@@ -57,9 +57,11 @@
         <div class="row">
           <div class="meta-column col-md-3 col-sm-3 col-xs-6">
             <p>Author</p>
+            <p>Discipline or practice</p>
           </div>
           <div class="meta-column col-md-3 col-sm-3 col-xs-6">
             <p>Type</p>
+            <p>Features</p>
           </div>
         </div>
       </div>
@@ -74,6 +76,24 @@
 
       </div>
 
+    </section>
+
+    <section id="details-section" class="col-md-12 col-sm-12 col-xs-12">
+      <h2>What's inside</h2>
+      <div class="row">
+        <div class="meta-column col-md-3 col-sm-3 col-xs-6">
+          <p>Things</p>
+        </div>
+        <div class="meta-column col-md-3 col-sm-3 col-xs-6">
+          <p>Things</p>
+        </div>
+        <div class="meta-column col-md-3 col-sm-3 col-xs-6">
+          <p>Things</p>
+        </div>
+        <div class="meta-column col-md-3 col-sm-3 col-xs-6">
+          <p>Things</p>
+        </div>
+      </div>
     </section>
 
 
