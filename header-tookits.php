@@ -32,7 +32,7 @@
   <body itemscope itemtype="http://schema.org/WebPage" <?php body_class(); ?>>
 
   <div class="mainwrapper clearfix">
-    <div id="content_wrap">
+    <div id="content_wrap" class="test-working">
 
       <?php if (trim(strip_tags(get_field('top_header_line', 'option'))) != '') { ?>
         <div class="top_bar_msg text-center">
