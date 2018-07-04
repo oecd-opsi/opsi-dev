@@ -1,6 +1,5 @@
-<?php get_header('header-toolkits');
+<?php get_header('toolkits');
     // note change
-    global $post;
 
 
   ?>
