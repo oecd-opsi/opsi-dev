@@ -32,7 +32,7 @@
   <body itemscope itemtype="http://schema.org/WebPage" <?php body_class(); ?>>
 
   <div class="mainwrapper clearfix">
-    <div id="content_wrap" class="test-working">
+    <div id="content_wrap">
 
       <?php if (trim(strip_tags(get_field('top_header_line', 'option'))) != '') { ?>
         <div class="top_bar_msg text-center">
@@ -149,7 +149,30 @@
             $layout = '';
           }
 
+          // always sidebar for buddypress
+          if (!bp_is_blog_page()) {
+            $layout = '';
+          }
+          // but not on registration
+          if (is_page('register')) {
+            $layout = 'fullpage';
+          }
 
 
-
+          if (is_singular( array('post') )) {
+            if ( is_active_sidebar( 'singleblog' ) && $layout != 'fullpage') { ?>
+              <div class="col-sm-3 col-sm-push-9"><div class="sidewrap"><?php dynamic_sidebar( 'singleblog' ); ?></div></div>
+            <?php }
+          } elseif ( is_active_sidebar( 'sidebar' ) && $layout != 'fullpage' && !(is_home() && !is_front_page()) && bp_is_blog_page()) { ?>
+            <div class="col-sm-3 col-sm-push-9"><div class="sidewrap"><?php dynamic_sidebar( 'sidebar' ); ?></div></div>
+          <?php
+          } elseif ( is_home() && !is_front_page()) {
+            if ( is_active_sidebar( 'blog' ) && $layout != 'fullpage') { ?>
+            <div class="col-sm-3 col-sm-push-9"><div class="sidewrap"><?php dynamic_sidebar( 'blog' ); ?></div></div>
+            <?php }
+          } elseif (!bp_is_blog_page()) {
+            if ( is_active_sidebar( 'buddypress' ) && $layout != 'fullpage') { ?>
+            <div class="col-sm-3 col-sm-push-9"><div class="sidewrap"><?php dynamic_sidebar( 'buddypress' ); ?></div></div>
+            <?php }
+          }
         ?>
