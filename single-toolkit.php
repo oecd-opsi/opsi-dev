@@ -105,6 +105,23 @@
 
   </section>
 
+  <section id="referral-section" class="col-md-12 col-sm-12 col-xs-12">
+    <div class="row">
+      <div class="meta-column col-md-6 col-sm-6 col-xs-12">
+        <div id="cases-referral-block" class="referral-block">
+          <h5>See cases of Behavioral Science used by others in the network</h5>
+          <p><a href="#">Go to case studies</a></p>
+        </div>
+      </div>
+      <div class="meta-column col-md-6 col-sm-6 col-xs-12">
+        <div id="cases-referral-block" class="referral-block">
+          <h5>Find experts and advisers who can assist me with this</h5>
+          <p><a href="#">Go to advice</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
 
 </div>
 
