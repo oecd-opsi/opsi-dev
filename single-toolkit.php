@@ -57,7 +57,16 @@
         <div class="row">
           <div class="meta-column col-md-6 col-sm-6 col-xs-12">
             <h3>Publisher</h3>
-            <?php the_field('publisher'); ?>
+            <?php
+            $publishers = get_field('publisher');
+
+            if( $publishers ): ?>
+            	<?php foreach( $publishers as $publisher ): ?>
+            		<p>
+            		<a href="<?php echo get_term_link( $publisher ); ?>"><?php echo $publisher->name; ?></a>
+                </p>
+            	<?php endforeach; ?>
+            <?php endif; ?>
 
             <h3>Discipline or practice</h3>
           </div>
