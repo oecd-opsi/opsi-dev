@@ -39,7 +39,7 @@
         </div>
       </div>
 
-      <div id="intro-section" class="col-md-7 col-sm-7 col-xs-12">
+      <div id="intro-section" class="col-md-7 col-sm-7 col-xs-12 toolkit-section">
 
         <h1 class="toolkit-title">
           <?php the_title(); ?>
@@ -55,11 +55,11 @@
 
 
         <div class="row">
-          <div class="meta-column col-md-3 col-sm-3 col-xs-6">
+          <div class="meta-column col-md-6 col-sm-6 col-xs-12">
             <p>Author</p>
             <p>Discipline or practice</p>
           </div>
-          <div class="meta-column col-md-3 col-sm-3 col-xs-6">
+          <div class="meta-column col-md-6 col-sm-6 col-xs-12">
             <p>Type</p>
             <p>Features</p>
           </div>

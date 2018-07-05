@@ -1857,9 +1857,27 @@ div.translate select::-ms-expand {
 //////////////////////////
 */
 
+
 .toolkit-section {
-  padding-bottom: 3em;
+  margin-bottom: 6em;
   clear: left;
+}
+
+#top-section {
+  margin-top: 0;
+}
+
+#top-section .toolkit-description,
+#top-section .toolkit-url {
+  padding-bottom: 2em;
+}
+
+#top-section h4.toolkit-url {
+
+}
+
+#top-section p.toolkit-description {
+  
 }
 
 .toolkit-section h1.toolkit-title {
