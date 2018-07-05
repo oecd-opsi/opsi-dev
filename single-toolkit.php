@@ -46,7 +46,7 @@
         </h1>
 
         <h6 class="toolkit-url">
-          URL for toolkit
+          <?php the_field('url'); ?>
         </h6>
 
         <p class="toolkit-description">
