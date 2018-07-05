@@ -121,7 +121,7 @@
     <div class="row">
       <div class="meta-column col-md-6 col-sm-6 col-xs-12">
         <div id="cases-referral-block" class="referral-block">
-          <h5>See cases of Behavioral Science used by others in the network</h5>
+          <h5>See cases of from others in the OECD network</h5>
           <p><a href="#">Go to case studies</a></p>
         </div>
       </div>
@@ -134,7 +134,7 @@
     </div>
   </section>
 
-  <section id="referral-section" class="toolkit-section col-md-12 col-sm-12 col-xs-12">
+  <section id="similar-resources-section" class="toolkit-section col-md-12 col-sm-12 col-xs-12">
     <h2>Similar resources</h2>
     <div class="row">
       <div class="related-toolkits-column col-md-6 col-sm-6 col-xs-12">
@@ -143,7 +143,7 @@
         </div>
         <div class="related-toolkit-meta col-md-8 col-sm-8 col-xs-6">
           <h5><a href="#">BETA Guide to developing behavioural interventions for randomised controlled trials</a></h5>
-          <p><strong>Australian Government Department of the Prime Minister and Cabinet</strong></p>
+          <h4>Australian Government Department of the Prime Minister and Cabinet</h4>
           <p>
             BETA’s approach to developing behavioural interventions for randomised controlled trials (RCTs). It pulls together behavioural and RCT expertise from around the world, in an easy to use guide for those looking to develop behavioural interventions for RCTs in government.
           </p>
@@ -155,7 +155,7 @@
         </div>
         <div class="related-toolkit-meta col-md-8 col-sm-8 col-xs-12">
           <h5><a href="#">EAST: Four Simple Ways to Apply Behavioural Insights</a></h5>
-          <p><strong>UK Behavioral Insights Team</strong></p>
+          <h4>UK Behavioral Insights Team</h4>
           <p>
             If you want to encourage a behaviour, make it Easy, Attractive, Social and Timely (EAST). These four simple principles, based on the Behavioural Insights Team’s own work and the wider academic literature, form the heart of the new framework for applying behavioural insights.
           </p>

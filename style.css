@@ -1862,6 +1862,10 @@ div.translate select::-ms-expand {
   margin-bottom: 6em;
 }
 
+.toolkit-section a {
+  color: #337ab7;  
+}
+
 #top-section {
   margin-top: 0;
 }
@@ -1893,7 +1897,20 @@ div.translate select::-ms-expand {
 }
 
 .toolkit-section .referral-block {
-  background-color: #ddd;
+  background-color: #EBF4FF;
+  padding: 2.5em;
+}
+
+.toolkit-section .related-toolkits-column h4 {
+  font-size: 1em;
+}
+
+.toolkit-section .related-toolkits-column h5 {
+  font-size: 1.2em;
+}
+
+.toolkit-section .related-toolkits-column h5 a {
+  color: #337ab7;
 }
 
 section#all-comments {
