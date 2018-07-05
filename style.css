@@ -1884,7 +1884,7 @@ div.translate select::-ms-expand {
 
 #top-section .toolkit-description,
 #top-section .toolkit-url {
-  padding-bottom: 2em;
+  padding-bottom: 1.4em;
 }
 
 #top-section h4.toolkit-url {
@@ -1945,8 +1945,6 @@ section#all-comments {
 
 .sample-image-box {
   background-color: #ddd;
-  height: auto;
+  height: 150px;
   width: auto;
-  max-height: 300px
-  max-width: 200px;
 }

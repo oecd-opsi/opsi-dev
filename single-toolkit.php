@@ -56,8 +56,10 @@
 
         <div class="row">
           <div class="meta-column col-md-6 col-sm-6 col-xs-12">
-            <p>Author</p>
-            <p>Discipline or practice</p>
+            <h3>Publisher</3>
+            <?php the_field('publisher'); ?>
+
+            <h3>Discipline or practice</h3>
           </div>
           <div class="meta-column col-md-6 col-sm-6 col-xs-12">
             <p>Type</p>
@@ -160,6 +162,8 @@
 
 
   <section id="all-comments" class="toolkit-section">
+    <h2>Feedback from the OECD network</h2>
+
     <?php comments_template(); ?>
     <?php endwhile; ?>
   </section>
