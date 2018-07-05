@@ -1870,7 +1870,7 @@ div.translate select::-ms-expand {
 #top-section {
   margin-top: 0;
   background-color: #f7fbfe;
-  padding-top: 2em;
+  padding-top: 4em;
   padding-bottom: 2em;
   overflow: auto;
   border-bottom: 1px solid #dbe7ef;
@@ -1890,6 +1890,10 @@ div.translate select::-ms-expand {
 
 }
 
+.toolkit-template-default .nitrobreadcrumb {
+  margin-bottom: 0px;
+}
+
 .toolkit-section h1.toolkit-title {
   padding-top: 0;
   margin-top: 0;
@@ -1897,6 +1901,10 @@ div.translate select::-ms-expand {
 
 .toolkit-section p {
   line-height: 1.2em;
+}
+
+#save-and-share {
+  padding: 0;
 }
 
 .toolkit-section strong {
