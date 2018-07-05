@@ -18,7 +18,7 @@
 
   <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-    <section id="top-section">
+    <section id="top-section" class="toolkit-section">
       <div id="image-section" class="col-md-4 col-sm-4 col-xs-12">
         <div class="tookit-image <?php echo (!has_post_thumbnail() ? 'noimg' : ''); ?>">
           <?php
@@ -78,7 +78,7 @@
 
     </section>
 
-    <section id="details-section" class="col-md-12 col-sm-12 col-xs-12">
+    <section id="details-section" class="toolkit-section col-md-12 col-sm-12 col-xs-12">
       <h2>About this resource</h2>
       <div class="row">
         <div class="meta-column col-md-3 col-sm-3 col-xs-6">
@@ -98,28 +98,26 @@
 
   </article>
 
-  <section id="feedback-section" class="col-md-12 col-sm-12 col-xs-12">
+  <section id="feedback-section" class="toolkit-section col-md-12 col-sm-12 col-xs-12">
 
-      <h2>Innovation community reviews</h2>
       <?php
-      $args = array (
-          'status' => 'approve',
-          'number' => '2'
-          );
-          $comments = get_comments( $args );
-          if ( !empty( $comments ) ) :
-          echo '<div class="row">';
-          foreach( $comments as $comment ) :
-          echo '<div class="meta-column col-md-6 col-sm-6 col-xs-12"><h5>' . $comment->comment_text . '</h5> <p><a href="' . comment_author_url() . '</a></p>' . $comment->comment_author . '</h5></div>';
-          endforeach;
-          echo '</div>';
-          endif;
+      // $args = array (
+      //     'status' => 'approve',
+      //     'number' => '2'
+      //     );
+      //     $comments = get_comments( $args );
+      //     if ( !empty( $comments ) ) :
+      //     echo '<div class="row">';
+      //     foreach( $comments as $comment ) :
+      //     echo '<div class="meta-column col-md-6 col-sm-6 col-xs-12"><h5>' . $comment->comment_text . '</h5> <p><a href="' . comment_author_url() . '</a></p>' . $comment->comment_author . '</h5></div>';
+      //     endforeach;
+      //     echo '</div>';
+      //     endif;
        ?>
-     </div>
 
   </section>
 
-  <section id="referral-section" class="col-md-12 col-sm-12 col-xs-12">
+  <section id="referral-section" class="toolkit-section col-md-12 col-sm-12 col-xs-12">
     <div class="row">
       <div class="meta-column col-md-6 col-sm-6 col-xs-12">
         <div id="cases-referral-block" class="referral-block">
@@ -136,8 +134,32 @@
     </div>
   </section>
 
+  <section id="referral-section" class="toolkit-section col-md-12 col-sm-12 col-xs-12">
+    <h2>Similar resources</h2>
+    <div class="row">
+      <div class="related-toolkits-column col-md-6 col-sm-6 col-xs-12">
+        <div class="related-toolkits">
+          <h5><a href="#">BETA Guide to developing behavioural interventions for randomised controlled trials</a></h5>
+          <p><strong>Australian Government Department of the Prime Minister and Cabinet</strong></p>
+          <p>
+            BETA’s approach to developing behavioural interventions for randomised controlled trials (RCTs). It pulls together behavioural and RCT expertise from around the world, in an easy to use guide for those looking to develop behavioural interventions for RCTs in government.
+          </p>
+        </div>
+      </div>
+      <div class="related-toolkits-column col-md-6 col-sm-6 col-xs-12">
+        <div class="related-toolkits">
+          <h5><a href="#">EAST: Four Simple Ways to Apply Behavioural Insights</a></h5>
+          <p><strong>UK Behavioral Insights Team</strong></p>
+          <p>
+            If you want to encourage a behaviour, make it Easy, Attractive, Social and Timely (EAST). These four simple principles, based on the Behavioural Insights Team’s own work and the wider academic literature, form the heart of the new framework for applying behavioural insights.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <section id="all-comments">
+
+  <section id="all-comments" class="toolkit-section">
     <?php comments_template(); ?>
     <?php endwhile; ?>
   </section>
