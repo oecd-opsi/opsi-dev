@@ -59,7 +59,6 @@
             <h5>Publisher</h5>
             <?php
             $publishers = get_field('publisher');
-
             if( $publishers ): ?>
             	<?php foreach( $publishers as $publisher ): ?>
             		<p>
@@ -69,6 +68,16 @@
             <?php endif; ?>
 
             <h5>Discipline or practice</h5>
+            <?php
+            $disciplines = get_field('discipline-or-practice');
+            if( $disciplines ): ?>
+            	<?php foreach( $disciplines as $discipline ): ?>
+            		<p>
+            		<a href="<?php echo get_term_link( $discipline ); ?>"><?php echo $discipline->name; ?></a>
+                </p>
+            	<?php endforeach; ?>
+            <?php endif; ?>
+
           </div>
           <div class="meta-column col-md-6 col-sm-6 col-xs-12">
             <p>Type</p>
