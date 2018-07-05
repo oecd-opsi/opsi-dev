@@ -28,7 +28,7 @@
 
             echo '
             <a href="' . $large_image_url[0] . '" title="' . the_title_attribute('echo=0') . '" class="featuredimglink fancybox" >';
-            echo get_the_post_thumbnail(get_the_ID(), 'blog');
+            echo get_the_post_medium(get_the_ID(), 'blog');
             echo '</a>';
 
             if ($img_info['image_meta']['caption'] != '') {
@@ -67,13 +67,7 @@
       </div>
 
       <div id="save-and-share" class="col-md-1 col-sm-1 col-xs-12">
-
-        <p>Up-vote</p>
-
         <?php echo (get_field('hide_social_sharing') === true ? '' : wpfai_social()); ?>
-
-        <p>Save for later</p>
-
       </div>
 
     </section>

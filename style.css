@@ -1873,10 +1873,10 @@ div.translate select::-ms-expand {
 
 #top-section {
   margin-top: 0;
-  background-color: #f7fbfe;
   padding-top: 4em;
   padding-bottom: 2em;
   overflow: auto;
+  background-color: #f7fbfe;
   border-bottom: 1px solid #dbe7ef;
 
 }
@@ -1920,8 +1920,10 @@ div.translate select::-ms-expand {
 }
 
 .toolkit-section .referral-block {
-  background-color: #EBF4FF;
+  background-color: #f7fbfe;
+  border: 1px solid #dbe7ef;
   padding: 2.5em 2.5em 2em 2.5em;
+  border-radius: 5px;
 }
 
 .toolkit-section .related-toolkits-column h4 {
