@@ -1859,7 +1859,11 @@ div.translate select::-ms-expand {
 
 
 .toolkit-section {
-  margin-bottom: 6em;
+  margin-bottom: 3em;
+}
+
+.toolkit-section h2 {
+  padding-top: 2em;
 }
 
 .toolkit-section a {
@@ -1888,6 +1892,10 @@ div.translate select::-ms-expand {
 
 #top-section p.toolkit-description {
 
+}
+
+#referral-section {
+  margin-top: 2em;
 }
 
 .toolkit-template-default .nitrobreadcrumb {
