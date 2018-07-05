@@ -1869,9 +1869,12 @@ div.translate select::-ms-expand {
 
 #top-section {
   margin-top: 0;
-  background-color: #ddd;
-  padding-top: 1em;
-  padding-bottom: 1em;
+  background-color: #f7fbfe;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  overflow: auto;
+  border-bottom: 1px solid #dbe7ef;
+
 }
 
 #top-section .toolkit-description,
