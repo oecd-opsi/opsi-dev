@@ -1882,7 +1882,6 @@ div.translate select::-ms-expand {
 
 }
 
-#top-section .toolkit-description,
 #top-section .toolkit-url {
   padding-bottom: 1.4em;
 }
@@ -1893,6 +1892,10 @@ div.translate select::-ms-expand {
 
 #top-section p.toolkit-description {
 
+}
+
+#top-section h5 {
+  padding-top: 1.4em;
 }
 
 #referral-section {

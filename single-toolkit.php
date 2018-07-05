@@ -56,7 +56,7 @@
 
         <div class="row">
           <div class="meta-column col-md-6 col-sm-6 col-xs-12">
-            <h3>Publisher</h3>
+            <h5>Publisher</h5>
             <?php
             $publishers = get_field('publisher');
 
@@ -68,7 +68,7 @@
             	<?php endforeach; ?>
             <?php endif; ?>
 
-            <h3>Discipline or practice</h3>
+            <h5>Discipline or practice</h5>
           </div>
           <div class="meta-column col-md-6 col-sm-6 col-xs-12">
             <p>Type</p>
@@ -126,7 +126,7 @@
     <div class="row">
       <div class="meta-column col-md-6 col-sm-6 col-xs-12">
         <div id="cases-referral-block" class="referral-block">
-          <h5>See cases of from others in the OECD network</h5>
+          <h5>See cases from others in the OECD network</h5>
           <p><a href="#">Go to case studies</a></p>
         </div>
       </div>
