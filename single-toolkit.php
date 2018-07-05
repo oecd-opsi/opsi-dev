@@ -57,7 +57,6 @@
         <div class="row">
           <div class="meta-column col-md-6 col-sm-6 col-xs-12">
             <h3>Publisher</h3>
-            <?php the_field('publisher'); ?>
 
             <h3>Discipline or practice</h3>
           </div>
