@@ -98,7 +98,7 @@
 
   </article>
 
-  <section id="feedback-section" class="toolkit-section col-md-12 col-sm-12 col-xs-12">
+  <!-- <section id="feedback-section" class="toolkit-section col-md-12 col-sm-12 col-xs-12"> -->
 
       <?php
       // $args = array (
@@ -115,7 +115,7 @@
       //     endif;
        ?>
 
-  </section>
+  <!-- </section> -->
 
   <section id="referral-section" class="toolkit-section col-md-12 col-sm-12 col-xs-12">
     <div class="row">

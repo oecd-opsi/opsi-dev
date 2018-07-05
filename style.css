@@ -1863,11 +1863,15 @@ div.translate select::-ms-expand {
 }
 
 .toolkit-section a {
-  color: #337ab7;  
+  color: #337ab7;
+  text-decoration: underline;
 }
 
 #top-section {
   margin-top: 0;
+  background-color: #ddd;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 
 #top-section .toolkit-description,
@@ -1898,7 +1902,7 @@ div.translate select::-ms-expand {
 
 .toolkit-section .referral-block {
   background-color: #EBF4FF;
-  padding: 2.5em;
+  padding: 2.5em 2.5em 2em 2.5em;
 }
 
 .toolkit-section .related-toolkits-column h4 {
