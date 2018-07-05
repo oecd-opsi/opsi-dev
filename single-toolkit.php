@@ -79,7 +79,7 @@
     </section>
 
     <section id="details-section" class="col-md-12 col-sm-12 col-xs-12">
-      <h2>What's inside</h2>
+      <h2>About this resource</h2>
       <div class="row">
         <div class="meta-column col-md-3 col-sm-3 col-xs-6">
           <p>Things</p>
@@ -100,6 +100,7 @@
 
   <section id="feedback-section" class="col-md-12 col-sm-12 col-xs-12">
 
+      <h2>Innovation community reviews</h2>
       <?php
       $args = array (
           'status' => 'approve',
@@ -107,13 +108,14 @@
           );
           $comments = get_comments( $args );
           if ( !empty( $comments ) ) :
-          echo '<ul>';
+          echo '<div class="row">';
           foreach( $comments as $comment ) :
-          echo '<li><a href="' . get_permalink( $comment->comment_post_ID ) . '#comment-' . $comment->comment_ID . '">' . $comment->comment_author . ' on ' . get_the_title( $comment->comment_post_ID ) . '</a></li>';
+          echo '<div class="meta-column col-md-6 col-sm-6 col-xs-12"><h5>' . $comment->comment_author . ' on ' . get_the_title( $comment->comment_post_ID ) . '</h5></div>';
           endforeach;
-          echo '</ul>';
+          echo '</div>';
           endif;
        ?>
+     </div>
 
   </section>
 
