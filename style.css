@@ -1865,5 +1865,16 @@ div.translate select::-ms-expand {
 .toolkit-section h1.toolkit-title {
   padding-top: 0;
   margin-top: 0;
+}
 
+.toolkit-section p {
+  line-height: 1.2em;
+}
+
+.toolkit-section strong {
+  font-weight: bold;
+}
+
+.cases-referral-block {
+  background-color: #ddd;
 }
