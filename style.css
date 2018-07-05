@@ -1894,7 +1894,8 @@ div.translate select::-ms-expand {
 
 }
 
-#top-section h5 {
+#top-section h5,
+#details-section h5 {
   padding-top: 1.4em;
 }
 

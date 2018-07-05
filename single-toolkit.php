@@ -149,8 +149,21 @@
         </div>
         <div class="meta-column col-md-3 col-sm-3 col-xs-6">
           <h5>Source files</h5>
-          <p>          <a href="<?php the_field('source-file'); ?>"><?php the_field('source-file'); ?></a>
-</p>
+          <?php
+
+          $file = get_field('source-file');
+
+          if( $file ):
+          	// vars
+          	$url = $file['url'];
+          	$title = $file['title'];
+          	$caption = $file['caption'];
+          	 ?>
+          	<p><a href="<?php echo $url; ?>" title="<?php echo $title; ?>">
+          		<?php echo $title; ?>
+          	</a></p>
+
+          <?php endif; ?>
         </div>
       </div>
     </section>
