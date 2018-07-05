@@ -110,7 +110,7 @@
           if ( !empty( $comments ) ) :
           echo '<div class="row">';
           foreach( $comments as $comment ) :
-          echo '<div class="meta-column col-md-6 col-sm-6 col-xs-12"><h5>' . $comment->comment_author . ' on ' . get_the_title( $comment->comment_post_ID ) . '</h5></div>';
+          echo '<div class="meta-column col-md-6 col-sm-6 col-xs-12"><h5>' . $comment->comment_text . '</h5> <p><a href="' . comment_author_url() . '</a></p>' . $comment->comment_author . '</h5></div>';
           endforeach;
           echo '</div>';
           endif;
