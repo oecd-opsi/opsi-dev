@@ -81,7 +81,7 @@
           </div>
           <div class="meta-column col-md-6 col-sm-6 col-xs-12">
 
-            <h5>Format</h5>
+            <h5>Formats</h5>
             <?php
             $formats = get_field('format');
             if( $formats ): ?>
@@ -142,10 +142,15 @@
           <?php endif; ?>
         </div>
         <div class="meta-column col-md-3 col-sm-3 col-xs-6">
-          <p>Things</p>
+          <h5>Date Published</h5>
+          <p><a href="#">2016</a></p>
+          <h5>Country of Origin</h5>
+          <p><a href="#">United Kingdom</a></p>
         </div>
         <div class="meta-column col-md-3 col-sm-3 col-xs-6">
-          <p>Things</p>
+          <h5>Source files</h5>
+          <p>          <a href="<?php the_field('source-file'); ?>"><?php the_field('source-file'); ?></a>
+</p>
         </div>
       </div>
     </section>
