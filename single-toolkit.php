@@ -80,8 +80,39 @@
 
           </div>
           <div class="meta-column col-md-6 col-sm-6 col-xs-12">
-            <p>Type</p>
-            <p>Features</p>
+            <h5>Type</h5>
+            <?php
+            $types = get_field('toolkit-type');
+            if( $types ): ?>
+            	<?php foreach( $types as $type ): ?>
+            		<p>
+            		<a href="<?php echo get_term_link( $type ); ?>"><?php echo $type->name; ?></a>
+                </p>
+            	<?php endforeach; ?>
+            <?php endif; ?>
+
+            <h5>Format</h5>
+            <?php
+            $formats = get_field('format');
+            if( $formats ): ?>
+            	<?php foreach( $formats as $format ): ?>
+            		<p>
+            		<a href="<?php echo get_term_link( $format ); ?>"><?php echo $format->name; ?></a>
+                </p>
+            	<?php endforeach; ?>
+            <?php endif; ?>
+
+            <h5>License</h5>
+            <?php
+            $licenses = get_field('license');
+            if( $licenses ): ?>
+            	<?php foreach( $licenses as $license ): ?>
+            		<p>
+            		<a href="<?php echo get_term_link( $license ); ?>"><?php echo $license->name; ?></a>
+                </p>
+            	<?php endforeach; ?>
+            <?php endif; ?>
+
           </div>
         </div>
       </div>
