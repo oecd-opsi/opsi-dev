@@ -1942,3 +1942,11 @@ div.translate select::-ms-expand {
 section#all-comments {
   clear: left;
 }
+
+.sample-image-box {
+  background-color: #ddd;
+  height: auto;
+  width: auto;
+  max-height: 300px
+  max-width: 200px;
+}

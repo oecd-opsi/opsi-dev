@@ -46,11 +46,11 @@
         </h1>
 
         <h6 class="toolkit-url">
-          <?php the_field('url'); ?>
+          <a href="<?php the_field('url'); ?>"><?php the_field('url'); ?></a>
         </h6>
 
         <p class="toolkit-description">
-          Description
+          <?php the_field('description'); ?>
         </p>
 
 
@@ -133,7 +133,7 @@
     <div class="row">
       <div class="related-toolkits-column col-md-6 col-sm-6 col-xs-12">
         <div class="related-toolkit-image col-md-4 col-sm-4 col-xs-6">
-          <p>image goes here</p>
+          <div class="sample-image-box">&nbsp;</div>
         </div>
         <div class="related-toolkit-meta col-md-8 col-sm-8 col-xs-6">
           <h5><a href="#">BETA Guide to developing behavioural interventions for randomised controlled trials</a></h5>
@@ -145,7 +145,7 @@
       </div>
       <div class="related-toolkits-column col-md-6 col-sm-6 col-xs-12">
         <div class="related-toolkit-image col-md-4 col-sm-4 col-xs-12">
-          <p>image goes here</p>
+          <div class="sample-image-box">&nbsp;</div>
         </div>
         <div class="related-toolkit-meta col-md-8 col-sm-8 col-xs-12">
           <h5><a href="#">EAST: Four Simple Ways to Apply Behavioural Insights</a></h5>
