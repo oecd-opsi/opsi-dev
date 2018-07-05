@@ -100,8 +100,20 @@
 
   <section id="feedback-section" class="col-md-12 col-sm-12 col-xs-12">
 
-      <?php comments_template(); ?>
-      <?php endwhile; ?>
+      <?php
+      $args = array (
+          'status' => 'approve',
+          'number' => '2'
+          );
+          $comments = get_comments( $args );
+          if ( !empty( $comments ) ) :
+          echo '<ul>';
+          foreach( $comments as $comment ) :
+          echo '<li><a href="' . get_permalink( $comment->comment_post_ID ) . '#comment-' . $comment->comment_ID . '">' . $comment->comment_author . ' on ' . get_the_title( $comment->comment_post_ID ) . '</a></li>';
+          endforeach;
+          echo '</ul>';
+          endif;
+       ?>
 
   </section>
 
@@ -122,6 +134,11 @@
     </div>
   </section>
 
+
+  <section id="all-comments">
+    <?php comments_template(); ?>
+    <?php endwhile; ?>
+  </section>
 
 </div>
 
