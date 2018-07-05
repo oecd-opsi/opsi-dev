@@ -80,16 +80,6 @@
 
           </div>
           <div class="meta-column col-md-6 col-sm-6 col-xs-12">
-            <h5>Type</h5>
-            <?php
-            $types = get_field('toolkit-type');
-            if( $types ): ?>
-            	<?php foreach( $types as $type ): ?>
-            		<p>
-            		<a href="<?php echo get_term_link( $type ); ?>"><?php echo $type->name; ?></a>
-                </p>
-            	<?php endforeach; ?>
-            <?php endif; ?>
 
             <h5>Format</h5>
             <?php
@@ -127,10 +117,29 @@
       <h2>About this resource</h2>
       <div class="row">
         <div class="meta-column col-md-3 col-sm-3 col-xs-6">
-          <p>Things</p>
+          <h5>Type</h5>
+          <?php
+          $types = get_field('toolkit-type');
+          if( $types ): ?>
+            <?php foreach( $types as $type ): ?>
+              <p>
+              <a href="<?php echo get_term_link( $type ); ?>"><?php echo $type->name; ?></a>
+              </p>
+            <?php endforeach; ?>
+          <?php endif; ?>
+
         </div>
         <div class="meta-column col-md-3 col-sm-3 col-xs-6">
-          <p>Things</p>
+          <h5>Features</h5>
+          <?php
+          $features = get_field('toolkit-features');
+          if( $features ): ?>
+            <?php foreach( $features as $feature ): ?>
+              <p>
+              <a href="<?php echo get_term_link( $feature ); ?>"><?php echo $feature->name; ?></a>
+              </p>
+            <?php endforeach; ?>
+          <?php endif; ?>
         </div>
         <div class="meta-column col-md-3 col-sm-3 col-xs-6">
           <p>Things</p>
