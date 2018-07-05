@@ -1860,7 +1860,6 @@ div.translate select::-ms-expand {
 
 .toolkit-section {
   margin-bottom: 6em;
-  clear: left;
 }
 
 #top-section {
@@ -1877,7 +1876,7 @@ div.translate select::-ms-expand {
 }
 
 #top-section p.toolkit-description {
-  
+
 }
 
 .toolkit-section h1.toolkit-title {
@@ -1893,6 +1892,10 @@ div.translate select::-ms-expand {
   font-weight: bold;
 }
 
-.cases-referral-block {
+.toolkit-section .referral-block {
   background-color: #ddd;
+}
+
+section#all-comments {
+  clear: left;
 }
