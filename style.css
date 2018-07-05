@@ -1931,6 +1931,7 @@ div.translate select::-ms-expand {
   font-size: 1em;
 }
 
+.toolkit-section h5,
 .toolkit-section .related-toolkits-column h5 {
   font-size: 1.2em;
 }
