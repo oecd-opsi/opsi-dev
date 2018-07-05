@@ -138,7 +138,10 @@
     <h2>Similar resources</h2>
     <div class="row">
       <div class="related-toolkits-column col-md-6 col-sm-6 col-xs-12">
-        <div class="related-toolkits">
+        <div class="related-toolkit-image col-md-2 col-sm-2 col-xs-6">
+          <p>image goes here</p>
+        </div>
+        <div class="related-toolkit-meta col-md-4 col-sm-4 col-xs-6">
           <h5><a href="#">BETA Guide to developing behavioural interventions for randomised controlled trials</a></h5>
           <p><strong>Australian Government Department of the Prime Minister and Cabinet</strong></p>
           <p>
@@ -147,7 +150,10 @@
         </div>
       </div>
       <div class="related-toolkits-column col-md-6 col-sm-6 col-xs-12">
-        <div class="related-toolkits">
+        <div class="related-toolkit-image col-md-2 col-sm-2 col-xs-6">
+          <p>image goes here</p>
+        </div>
+        <div class="related-toolkit-meta col-md-4 col-sm-4 col-xs-6">
           <h5><a href="#">EAST: Four Simple Ways to Apply Behavioural Insights</a></h5>
           <p><strong>UK Behavioral Insights Team</strong></p>
           <p>
