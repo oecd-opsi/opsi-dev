@@ -19,7 +19,7 @@
               <div class="entry-content"><?php // the_content(); ?></div>
 
 
-              <div id="filters-section" class="filters-section col-md-3 col-sm-3 col-xs-12">
+              <div id="filters-section" class="filters-section col-md-4 col-sm-4 col-xs-12">
 
               <?php
 
@@ -47,7 +47,7 @@ echo do_shortcode('[searchandfilter id="1414"]');
 
         <?php if ( $the_query->have_posts() ) : ?>
 
-          <div id="search-filter-results-1414" class="results-section col-md-9 col-sm-9 col-xs-12">
+          <div id="search-filter-results-1414" class="results-section col-md-8 col-sm-8 col-xs-12">
 
 
         <!-- pagination here -->
