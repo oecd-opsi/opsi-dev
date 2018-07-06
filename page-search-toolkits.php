@@ -18,6 +18,12 @@
 
               <div class="entry-content"><?php the_content(); ?></div>
 
+              <?php
+              $args = array('post_type' => 'post');
+              $args['search_filter_id'] = 1414;
+              $query = new WP_Query($args);
+              ?>
+
           </article>
       <?php // comments_template(); ?>
       <?php endwhile; ?>
