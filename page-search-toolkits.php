@@ -19,14 +19,21 @@
               <div class="entry-content"><?php // the_content(); ?></div>
 
 
+              <div id="filters-section" class="col-md-4 col-sm-4 col-xs-12">
+
+              <?php
 
 
+// add filters here
 
 
-
+echo do_shortcode('[searchandfilter id="1414"]');
+?>
+</div>
 
 <?php
 
+// end of filters
 
 
 
@@ -40,23 +47,13 @@
 
         <?php if ( $the_query->have_posts() ) : ?>
 
+          <div id="results-section" class="col-md-3 col-sm-3 col-xs-12">
+
 
         <!-- pagination here -->
 
         <!-- the loop -->
         <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
-
-<!-- add filters here -->
-
-          <div id="filters-section" class="col-md-3 col-sm-3 col-xs-12">
-          <?php
-          echo do_shortcode('[searchandfilter id="1414"]');
-          ?>
-          </div>
-<!-- end of filters -->
-
-<div id="results-section" class="col-md-9 col-sm-9 col-xs-12">
-
         <h2><?php the_title(); ?></h2>
 
 <!-- current image handling -->
