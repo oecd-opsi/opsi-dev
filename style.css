@@ -1969,6 +1969,7 @@ Search results styling
 
 .searchandfilter ul li li {
   padding: 0;
+  cursor: pointer;
 }
 
 .searchandfilter ul {
@@ -1979,5 +1980,5 @@ Search results styling
 
 /* Customize the label (the container) */
 .searchandfilter ul li .sf-input-checkbox {
-    
+
 }

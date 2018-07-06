@@ -19,7 +19,7 @@
               <div class="entry-content"><?php the_content(); ?></div>
 
               <?php
-              $args = array('post_type' => 'post');
+              $args = array('post_type' => 'toolkit');
               $args['search_filter_id'] = 1414;
               $query = new WP_Query($args);
               ?>
