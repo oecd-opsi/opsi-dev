@@ -54,18 +54,17 @@ echo do_shortcode('[searchandfilter id="1414"]');
 
         <!-- the loop -->
         <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
-        <h2><?php the_title(); ?></h2>
+        <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 
 <!-- current image handling -->
 <div id="image-section" class="col-md-4 col-sm-4 col-xs-12">
   <div class="toolkit-image <?php echo (!has_post_thumbnail() ? 'noimg' : ''); ?>">
     <?php
      if ( has_post_thumbnail()) {
-      $large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id(get_the_ID()), 'large');
       $img_info =  wp_get_attachment_metadata( get_post_thumbnail_id(get_the_ID()) );
 
       echo '
-      <a href="' . $large_image_url[0] . '" title="' . the_title_attribute('echo=0') . '" class="featuredimglink fancybox" >';
+      <a href="' . the_permalink() . '" title="' . the_title_attribute('echo=0') . '" class="toolkit-list-image" >';
       echo get_the_post_thumbnail(get_the_ID(), 'blog');
       echo '</a>';
 
