@@ -1967,7 +1967,8 @@ Search results styling
 /////////////
 */
 
-.searchandfilter ul li li {
+.searchandfilter ul li,
+.searchandfilter ul li ul li {
   padding: 0;
   cursor: pointer;
 }
