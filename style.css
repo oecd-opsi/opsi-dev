@@ -1967,6 +1967,16 @@ Search results styling
 /////////////
 */
 
+#filters-section {
+  background-color: #f7fbfe;
+  border: 1px solid #dbe7ef;  
+}
+
+
+#filters-section h4 {
+  padding-top: 1em;
+}
+
 .searchandfilter ul li,
 .searchandfilter ul li ul li {
   padding: 0;
