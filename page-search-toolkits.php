@@ -19,7 +19,7 @@
               <div class="entry-content"><?php // the_content(); ?></div>
 
 
-              <div id="filters-section" class="filters-section col-md-4 col-sm-4 col-xs-12">
+              <div id="filters-section" class="filters-section col-md-3 col-sm-3 col-xs-12">
 
               <?php
 
