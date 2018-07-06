@@ -18,15 +18,20 @@
 
               <div class="entry-content"><?php // the_content(); ?></div>
 
+
+              <div id="image-section" class="col-md-4 col-sm-4 col-xs-12">
+
               <?php
 
 
 // add filters here
 
+
 echo do_shortcode('[searchandfilter id="1414"]');
+?>
+</div>
 
-
-
+<?php
 
 // end of filters
 
