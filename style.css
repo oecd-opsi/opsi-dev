@@ -1972,7 +1972,7 @@ Search results styling
   border: 1px solid #dbe7ef;
   border-left: none;
   border-radius: 5px;
-  padding: 2em;
+  padding: 32px 32px 32px 12px;
 
 }
 
@@ -1982,15 +1982,22 @@ Search results styling
   font-size: 1.3em;
 }
 
+#search-filter-results-1414,
+.results-section {
+  margin-left: 42px;
+}
+
 .searchandfilter ul li,
 .searchandfilter ul li ul li {
-  padding: 0;
+  padding: 2px;
+  padding-left: 12px;
   cursor: pointer;
+  font-size: 1.05em;
 }
 
 
 .searchandfilter ul li ul li.sf-option-active {
-  background-color: blue; 
+  background-color: blue;
 }
 
 .searchandfilter ul {
