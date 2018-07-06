@@ -16,9 +16,22 @@
 
               <h1 class="entry-title"><?php the_title(); ?></h1>
 
-              <div class="entry-content"><?php the_content(); ?></div>
+              <div class="entry-content"><?php // the_content(); ?></div>
 
               <?php
+
+
+// add filters here
+
+echo do_shortcode('[searchandfilter id="1"]');
+
+
+
+
+// end of filters
+
+
+
 
         // the query
         $args = array('post_type' => 'post');
@@ -61,7 +74,7 @@
   <?php the_field('description'); ?>
 </p>
 
-<h5>Discipline or practice</h5>
+<!-- Discipline or practice -->
 <?php
 $disciplines = get_field('discipline-or-practice');
 if( $disciplines ): ?>
@@ -71,6 +84,8 @@ if( $disciplines ): ?>
     </p>
   <?php endforeach; ?>
 <?php endif; ?>
+<!-- End Discipline or practice -->
+
 
 
         <?php endwhile; ?>
