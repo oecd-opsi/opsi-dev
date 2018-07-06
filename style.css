@@ -1960,3 +1960,19 @@ section#all-comments {
   height: 150px;
   width: auto;
 }
+
+/*
+/////////////
+Search results styling
+/////////////
+*/
+
+.searchandfilter ul li li {
+  padding: 0;
+}
+
+.searchandfilter ul {
+  margin-left: 0;
+  padding-left: 0;
+  
+}
