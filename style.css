@@ -1984,7 +1984,7 @@ Search results styling
 
 #search-filter-results-1414,
 .results-section {
-  margin-left: 42px;
+  padding-left: 42px;
 }
 
 .searchandfilter ul li,
@@ -1997,7 +1997,7 @@ Search results styling
 
 
 .searchandfilter ul li ul li.sf-option-active {
-  background-color: blue;
+  background-color: #f7fbfe;
 }
 
 .searchandfilter ul {
