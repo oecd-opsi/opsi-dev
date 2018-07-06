@@ -16,7 +16,7 @@
 
               <h1 class="entry-title"><?php the_title(); ?></h1>
 
-              <div class="entry-content"><?php // the_content(); ?></div>
+              <div class="entry-content"><?php  the_content(); ?></div>
 
 
               <div id="filters-section" class="col-md-4 col-sm-4 col-xs-12">
@@ -47,7 +47,7 @@ echo do_shortcode('[searchandfilter id="1414"]');
 
         <?php if ( $the_query->have_posts() ) : ?>
 
-          <div id="results-section" class="col-md-3 col-sm-3 col-xs-12">
+          <div id="results-section" class="col-md-9 col-sm-9 col-xs-12">
 
 
         <!-- pagination here -->
