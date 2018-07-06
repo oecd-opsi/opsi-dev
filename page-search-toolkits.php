@@ -23,7 +23,7 @@
 
 // add filters here
 
-echo do_shortcode('[searchandfilter id="1"]');
+echo do_shortcode('[searchandfilter id="1414"]');
 
 
 
