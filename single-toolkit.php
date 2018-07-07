@@ -28,7 +28,7 @@
 
             echo '
             <a href="' . $large_image_url[0] . '" title="' . the_title_attribute('echo=0') . '" class="featuredimglink fancybox" >';
-            echo get_the_post_thumbnail(get_the_ID(), 'blog');
+            echo get_the_post_thumbnail(get_the_ID(), 'medium');
             echo '</a>';
 
             if ($img_info['image_meta']['caption'] != '') {
