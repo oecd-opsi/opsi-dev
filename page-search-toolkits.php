@@ -61,11 +61,11 @@ echo do_shortcode('[searchandfilter id="1414"]');
   <div class="toolkit-image <?php echo (!has_post_thumbnail() ? 'noimg' : ''); ?>">
     <?php
      if ( has_post_thumbnail()) {
-      $img_info =  wp_get_attachment_metadata( get_post_thumbnail_id(get_the_ID()) );
+      $img_info =  wp_get_attachment_metadata( get_post_thumbnail_id(get_the_ID()), 'medium' );
 
       echo '
       <a href="' . the_permalink() . '" title="' . the_title_attribute('echo=0') . '" class="toolkit-list-image" >';
-      echo get_the_post_thumbnail(get_the_ID(), 'blog');
+      echo get_the_post_thumbnail(get_the_ID(), 'medium');
       echo '</a>';
 
       if ($img_info['image_meta']['caption'] != '') {
