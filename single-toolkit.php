@@ -24,7 +24,7 @@
           <?php
            if ( has_post_thumbnail()) {
             $large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id(get_the_ID()), 'large');
-            $img_info =  wp_get_attachment_metadata( get_post_thumbnail_id(get_the_ID()) );
+            $img_info =  wp_get_attachment_metadata( get_post_thumbnail_id(get_the_ID()), 'medium' );
 
             echo '
             <a href="' . $large_image_url[0] . '" title="' . the_title_attribute('echo=0') . '" class="featuredimglink fancybox" >';
