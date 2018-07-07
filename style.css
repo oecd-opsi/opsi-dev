@@ -1986,6 +1986,7 @@ Search results styling
 
 #filters-section a.search-filter-reset {
   color: red;
+  text-decoration: underline;
 }
 
 #filters-section .sf-label-checkbox {
@@ -1993,7 +1994,7 @@ Search results styling
 }
 
 #filters-section .sf-label-checkbox .sf-count {
-  color: #777;
+  color: #999;
 }
 
 
@@ -2013,6 +2014,7 @@ Search results styling
   padding-left: 12px;
   cursor: pointer;
   font-size: 1.05em;
+  margin-bottom: 6px;
 }
 
 

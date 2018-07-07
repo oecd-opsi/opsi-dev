@@ -94,6 +94,34 @@ if( $disciplines ): ?>
 <!-- End Discipline or practice -->
 
 
+<!-- Publisher -->
+<?php
+$publishers = get_field('publisher');
+if( $publishers ): ?>
+  <?php foreach( $publishers as $publisher ): ?>
+    <p>
+    <a href="<?php echo get_term_link( $publisher ); ?>"><?php echo $publisher->name; ?></a>
+    </p>
+  <?php endforeach; ?>
+<?php endif; ?>
+<!-- End Publisher -->
+
+<!-- Features  -->
+<?php
+$features = get_field('toolkit-features');
+if( $features ): ?>
+  <?php foreach( $features as $feature ): ?>
+    <p>
+    <a href="<?php echo get_term_link( $feature ); ?>"><?php echo $feature->name; ?></a>
+    </p>
+  <?php endforeach; ?>
+<?php endif; ?>
+<!-- End Features -->
+
+
+
+
+
 
         <?php endwhile; ?>
         <!-- end of the loop -->
