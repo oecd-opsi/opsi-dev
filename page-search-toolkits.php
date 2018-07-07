@@ -83,7 +83,7 @@ echo do_shortcode('[searchandfilter id="1414"]');
 $disciplines = get_field('discipline-or-practice');
 if( $disciplines ): ?>
   <?php foreach( $disciplines as $discipline ): ?>
-    <p>
+    <p class="search-results-meta">
     <a href="<?php echo get_term_link( $discipline ); ?>"><?php echo $discipline->name; ?></a>
     </p>
   <?php endforeach; ?>
@@ -98,7 +98,7 @@ if( $disciplines ): ?>
 $publishers = get_field('publisher');
 if( $publishers ): ?>
   <?php foreach( $publishers as $publisher ): ?>
-    <p>
+    <p class="search-results-meta">
     <a href="<?php echo get_term_link( $publisher ); ?>"><?php echo $publisher->name; ?></a>
     </p>
   <?php endforeach; ?>

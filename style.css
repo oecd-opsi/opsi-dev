@@ -2051,3 +2051,8 @@ Search results styling
   font-size: 1em;
   font-weight: bold;
 }
+
+.results-content .search-results-meta {
+  line-height: 1.2em;
+  font-size: 1em;
+}
