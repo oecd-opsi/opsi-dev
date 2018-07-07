@@ -57,7 +57,7 @@ echo do_shortcode('[searchandfilter id="1414"]');
         <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 
 <!-- current image handling -->
-<div class="results-image col-md-4 col-sm-4 col-xs-12">
+<div class="results-image col-md-3 col-sm-3 col-xs-12">
   <div class="toolkit-image <?php echo (!has_post_thumbnail() ? 'noimg' : ''); ?>">
     <a href="
     <?php echo the_permalink() ?>" class="toolkit-list-image">
@@ -68,12 +68,17 @@ echo do_shortcode('[searchandfilter id="1414"]');
 </div>
 <!-- end current image handling -->
 
-<div class="results-content col-md-8 col-sm-8 col-xs-12">
+<div class="results-content col-md-9 col-sm-9 col-xs-12">
 <p class="toolkit-description">
   <?php the_field('description'); ?>
 </p>
 
+
+<div class="row col-md-12 col-sm-12 col-xs-12">
+
+<div class="results-meta-column col-md-4 col-sm-4 col-xs-4">
 <!-- Discipline or practice -->
+<h5>Discipline or Practice</h5>
 <?php
 $disciplines = get_field('discipline-or-practice');
 if( $disciplines ): ?>
@@ -84,8 +89,9 @@ if( $disciplines ): ?>
   <?php endforeach; ?>
 <?php endif; ?>
 <!-- End Discipline or practice -->
+</div>
 
-
+<div class="results-meta-column col-md-4 col-sm-4 col-xs-4">
 <!-- Publisher -->
 <h5>Publisher</h5>
 <?php
@@ -98,7 +104,10 @@ if( $publishers ): ?>
   <?php endforeach; ?>
 <?php endif; ?>
 <!-- End Publisher -->
+</div>
 
+
+<div class="results-meta-column col-md-4 col-sm-4 col-xs-4">
 <!-- Features  -->
 <?php
 $features = get_field('toolkit-features');
@@ -110,8 +119,9 @@ if( $features ): ?>
   <?php endforeach; ?>
 <?php endif; ?>
 <!-- End Features -->
+</div>
 
-
+</div>
 </div>
 
 
