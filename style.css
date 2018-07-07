@@ -2034,7 +2034,7 @@ Search results styling
 }
 
 .results-image {
-  border: 1px #ccc solid;
+  /* border: 1px #ccc solid; */
 }
 
 .results-content p {
@@ -2044,12 +2044,12 @@ Search results styling
 .results-content .toolkit-description {
   line-height: 1.2em;
   font-size: 1em;
+  padding-bottom: 1em;
 }
 
 .results-content .results-meta-heading {
   line-height: 1.2em;
   font-size: 1em;
-  font-weight: bold;
 }
 
 .results-content .search-results-meta {
@@ -2057,6 +2057,11 @@ Search results styling
   font-size: 1em;
 }
 
+.results-content .results-meta-column {
+  padding-left: 0;
+}
+
 .result-item {
-  margin-bottom: 2em;
+  margin-bottom: 4em;
+  overflow: auto;
 }
