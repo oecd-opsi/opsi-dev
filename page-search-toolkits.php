@@ -78,7 +78,7 @@ echo do_shortcode('[searchandfilter id="1414"]');
 
 <div class="results-meta-column col-md-4 col-sm-4 col-xs-4">
 <!-- Discipline or practice -->
-<h5>Discipline or Practice</h5>
+<p class="results-meta-heading">Discipline or Practice</p>
 <?php
 $disciplines = get_field('discipline-or-practice');
 if( $disciplines ): ?>
@@ -93,7 +93,7 @@ if( $disciplines ): ?>
 
 <div class="results-meta-column col-md-4 col-sm-4 col-xs-4">
 <!-- Publisher -->
-<h5>Publisher</h5>
+<p class="results-meta-heading">Publisher</p>
 <?php
 $publishers = get_field('publisher');
 if( $publishers ): ?>
@@ -109,6 +109,7 @@ if( $publishers ): ?>
 
 <div class="results-meta-column col-md-4 col-sm-4 col-xs-4">
 <!-- Features  -->
+<p class="results-meta-heading">Features</p>
 <?php
 $features = get_field('toolkit-features');
 if( $features ): ?>
