@@ -87,6 +87,7 @@ if( $disciplines ): ?>
 
 
 <!-- Publisher -->
+<h5>Publisher</h5>
 <?php
 $publishers = get_field('publisher');
 if( $publishers ): ?>
