@@ -64,8 +64,7 @@ echo do_shortcode('[searchandfilter id="1414"]');
       $large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id(get_the_ID()), 'large');
       $img_info =  wp_get_attachment_metadata( get_post_thumbnail_id(get_the_ID()), 'medium' );
 
-      echo '
-      <a href="' . the_permalink() . '" title="' . the_title_attribute('echo=0') . '" class="toolkit-list-image" >';
+      echo '<a href="' . the_permalink() . '" title="' . the_title_attribute('echo=0') . '" class="toolkit-list-image" >';
       echo get_the_post_thumbnail(get_the_ID(), 'medium');
       echo '</a>';
 
