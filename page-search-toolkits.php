@@ -61,6 +61,7 @@ echo do_shortcode('[searchandfilter id="1414"]');
   <div class="toolkit-image <?php echo (!has_post_thumbnail() ? 'noimg' : ''); ?>">
     <?php
      if ( has_post_thumbnail()) {
+      $large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id(get_the_ID()), 'large');
       $img_info =  wp_get_attachment_metadata( get_post_thumbnail_id(get_the_ID()), 'medium' );
 
       echo '
