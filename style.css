@@ -2005,7 +2005,7 @@ Search results styling
 
 #search-filter-results-1414,
 .results-section {
-  padding-left: 42px;
+  padding-left: 28px;
 }
 
 .searchandfilter ul li,
@@ -2064,6 +2064,9 @@ Search results styling
 .results-section .result-item {
   margin-bottom: 4em;
   overflow: auto;
+  background-color: #f7fbfe;
   border: 1px solid #dbe7ef;
   border-radius: 5px;
+  padding: 24px;
+
 }
