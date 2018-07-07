@@ -60,11 +60,9 @@ echo do_shortcode('[searchandfilter id="1414"]');
 <div id="image-section" class="col-md-4 col-sm-4 col-xs-12">
   <div class="toolkit-image <?php echo (!has_post_thumbnail() ? 'noimg' : ''); ?>">
     <?php
-
-      echo '<a href="' . the_permalink() . '" title="' . the_title_attribute('echo=0') . '" class="toolkit-list-image" >';
+//      echo '<a href="' . the_permalink() . '" title="' . the_title_attribute('echo=0') . '" class="toolkit-list-image" >';
       echo get_the_post_thumbnail(get_the_ID(), 'medium');
-      echo '</a>';
-
+//      echo '</a>';
     ?>
   </div>
 </div>
