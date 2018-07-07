@@ -2062,9 +2062,9 @@ Search results styling
 }
 
 .results-section .result-item {
-  margin-bottom: 4em;
+  margin-bottom: 1.2em;
   overflow: auto;
-  background-color: #f7fbfe;
+  /* background-color: #f7fbfe; */
   border: 1px solid #dbe7ef;
   border-radius: 5px;
   padding: 24px;
@@ -2072,5 +2072,5 @@ Search results styling
 }
 
 .results-section .result-item  h2 {
-  padding-bottom: 1em;
+  padding-bottom: .4em;
 }
