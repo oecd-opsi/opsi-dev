@@ -114,7 +114,7 @@ if( $publishers ): ?>
 $features = get_field('toolkit-features');
 if( $features ): ?>
   <?php foreach( $features as $feature ): ?>
-    <p>
+    <p class="search-results-meta">
     <a href="<?php echo get_term_link( $feature ); ?>"><?php echo $feature->name; ?></a>
     </p>
   <?php endforeach; ?>
