@@ -2032,3 +2032,13 @@ Search results styling
 .searchandfilter ul li .sf-input-checkbox {
 
 }
+
+.results-image {
+  border: 1px #ccc solid;
+}
+
+.results-content .toolkit-description {
+  line-height: 1.2em;
+  font-size: 1em;
+  
+}

@@ -57,7 +57,7 @@ echo do_shortcode('[searchandfilter id="1414"]');
         <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 
 <!-- current image handling -->
-<div id="image-section" class="col-md-4 col-sm-4 col-xs-12">
+<div class="results-image col-md-4 col-sm-4 col-xs-12">
   <div class="toolkit-image <?php echo (!has_post_thumbnail() ? 'noimg' : ''); ?>">
     <a href="
     <?php echo the_permalink() ?>" class="toolkit-list-image">
@@ -68,6 +68,7 @@ echo do_shortcode('[searchandfilter id="1414"]');
 </div>
 <!-- end current image handling -->
 
+<div class="results-content col-md-8 col-sm-8 col-xs-12">
 <p class="toolkit-description">
   <?php the_field('description'); ?>
 </p>
@@ -110,7 +111,7 @@ if( $features ): ?>
 <!-- End Features -->
 
 
-
+</div>
 
 
 
