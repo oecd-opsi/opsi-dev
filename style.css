@@ -2056,3 +2056,7 @@ Search results styling
   line-height: 1.2em;
   font-size: 1em;
 }
+
+.result-item {
+  margin-bottom: 2em;
+}

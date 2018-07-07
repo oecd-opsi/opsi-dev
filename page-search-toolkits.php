@@ -54,6 +54,9 @@ echo do_shortcode('[searchandfilter id="1414"]');
 
         <!-- the loop -->
         <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+
+
+        <div class="result-item">
         <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 
 <!-- current image handling -->
@@ -124,7 +127,7 @@ if( $features ): ?>
 
 </div>
 </div>
-
+</div> <!-- result item -->
 
 
         <?php endwhile; ?>
