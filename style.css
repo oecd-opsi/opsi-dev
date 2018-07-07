@@ -1988,6 +1988,14 @@ Search results styling
   color: red;
 }
 
+#filters-section .sf-label-checkbox {
+  display: block;
+}
+
+#filters-section .sf-label-checkbox .sf-count {
+  color: #777;
+}
+
 
 #filters-section h4 {
   padding-top: 2em;
