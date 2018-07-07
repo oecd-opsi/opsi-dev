@@ -2070,3 +2070,7 @@ Search results styling
   padding: 24px;
 
 }
+
+.results-section .result-item  h2 {
+  padding-bottom: 1em;
+}
