@@ -2037,8 +2037,17 @@ Search results styling
   border: 1px #ccc solid;
 }
 
+.results-content p {
+  margin: 0 0 4px 0;
+}
+
 .results-content .toolkit-description {
   line-height: 1.2em;
   font-size: 1em;
-  
+}
+
+.results-content .results-meta-heading {
+  line-height: 1.2em;
+  font-size: 1em;
+  font-weight: bold;
 }
