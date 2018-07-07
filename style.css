@@ -1972,16 +1972,16 @@ Search results styling
   border: 1px solid #dbe7ef;
   border-left: none;
   border-radius: 5px;
-  padding: 0px 32px 32px 12px;
+  padding: 32px 32px 32px 12px;
 
 }
 
 #filters-section .sf-field-search input {
-  width: 90%;
+  width: 22em;
 }
 
 #filters-section .chosen-container-multi .chosen-choices {
-  width: 78%;
+  width: 22em;
 }
 
 #filters-section a.search-filter-reset {
@@ -1989,7 +1989,7 @@ Search results styling
 }
 
 #filters-section .sf-label-checkbox {
-  display: block;
+  display: inline;
 }
 
 #filters-section .sf-label-checkbox .sf-count {
