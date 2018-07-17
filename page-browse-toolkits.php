@@ -45,18 +45,6 @@
 
 
 
-        <?php endwhile; ?>
-        <!-- end of the loop -->
-
-        <!-- pagination here -->
-
-        <?php wp_reset_postdata(); ?>
-
-        <?php else : ?>
-        <p><?php esc_html_e( 'Sorry, no posts matched your criteria.' ); ?></p>
-        <?php endif; ?>
-
-
           </article>
       <?php // comments_template(); ?>
       <?php endwhile; ?>
