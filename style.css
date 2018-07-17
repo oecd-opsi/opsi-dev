@@ -2079,23 +2079,24 @@ Search results styling
 
 /* STYLING FOR TOOLKITS LANDING + BROWSE */
 
-#toolkit-top-level {
+
+
+
+
+
+
+#browse-options {
+
 
 }
 
-
-
-h3.category-header {
+#browse-options h2 {
   font-size: 1.5em;
   padding-top: 4.3em;
 }
 
-h3.first-category {
-  padding-top: 2em;
-}
 
-#toolkit-top-level .category-option,
-.wizard-style .category-option {
+#browse-options .topic-column a {
   display: block;
   border: 1px solid #e3e3e3;
   border-radius: 8px;
@@ -2103,7 +2104,7 @@ h3.first-category {
   margin: 0;
 }
 
-.wizard-style .category-option span.category-text {
+#browse-options .topic-column span.category-text {
   display: block;
   font-weight: bold;
   height: 5em;
@@ -2113,18 +2114,6 @@ h3.first-category {
   color: #337ab7;
 }
 
-.wizard-style .category-option:hover {
+#browse-options .topic-column a:hover {
   text-decoration: underline;
-}
-
-
-.wizard-style .category-box {
-  margin: 0;
-  padding: .5em;
-}
-
-
-.wizard-style .category-row {
-  clear: left;
-  margin-bottom: 2.5em;
 }
