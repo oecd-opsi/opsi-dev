@@ -2104,6 +2104,11 @@ Search results styling
   margin: 0;
 }
 
+#browse-options .topic-column {
+  clear: left;
+  display: block;
+}
+
 
 #browse-options .action-boxes a {
   display: block;
