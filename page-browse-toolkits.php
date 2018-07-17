@@ -127,7 +127,7 @@
 
 
 
-              <div id="take-action-box" class="category-row wpb_column vc_column_container col-md-6 vc_col-sm-12">
+              <div id="take-action-box" class="action-boxes category-row wpb_column vc_column_container col-md-6 vc_col-sm-12">
 
                 <h2 id="take-action" class="category-header links-header">Take action</h2>
 
@@ -155,7 +155,7 @@
 
 
 
-              <div id="connect-box" class="category-row wpb_column vc_column_container col-md-6 vc_col-sm-12">
+              <div id="connect-box" class="action-boxes category-row wpb_column vc_column_container col-md-6 vc_col-sm-12">
 
                 <h2 id="connect" class="category-header links-header">Connect</h2>
 
