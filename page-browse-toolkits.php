@@ -32,7 +32,7 @@
 
             <section id="browse-options">
 
-              <div class="entry-content"><?php // the_content(); ?></div>
+              <div class="entry-content"><?php the_content(); ?></div>
 
             </section>
 
