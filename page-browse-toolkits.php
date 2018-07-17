@@ -30,14 +30,165 @@
 
             </section>
 
-            <section id="browse-options">
+            <section id="intro-section" class="browse-page-content category-row wpb_column vc_column_container col-md-12 vc_col-sm-12">
 
-              <div class="entry-content"><?php the_content(); ?></div>
+              <h2 id="intro-text" class="category-header text-header">Welcome to the OPSI Meta-Toolkit</h2>
+              <p class="browse-page-content">
+                Toolkits are a great way to share innovative methods and practices. A plethora of free innovation toolkits, playbooks and guides exist to help people identify, develop and practice necessary skills and apply new ways of reaching an outcome. We built this “Meta-Toolkit” to help you find the ones best suited to you and your situation. <a href="#how-it-works">Learn more</a>
+              </p>
 
             </section>
 
+            <section id="browse-options" class="browse-page-content">
+
+              <h2 id="explore-topics" class="category-header links-header">Explore topics</h2>
+              <div id="explore-box" class="category-row wpb_column vc_column_container vc_col-sm-12">
+
+                <div class="col-md-4 col-sm-4 topic-column">
+                  <a href="/guide/design/">
+                    <div class="category-option">
+                      <span class="category-text">Design</span>
+                    </div>
+                  </a>
+                  <a href="/guide/social-innovation/">
+                    <div class="category-option">
+                      <span class="category-text">Social Innovation</span>
+                    </div>
+                  </a>
+                  <a href="/guide/open-government/">
+                    <div class="category-option">
+                      <span class="category-text">Open Government</span>
+                    </div>
+                  </a>
+                  <a href="/guide/public-policy/">
+                    <div class="category-option">
+                      <span class="category-text">Public Policy</span>
+                    </div>
+                  </a>
+                  <a href="/guide/service-design/">
+                    <div class="category-option">
+                      <span class="category-text">Service Design</span>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="col-md-4 col-sm-4 topic-column">
+                  <a href="/guide/digital-transformation/">
+                    <div class="category-option">
+                      <span class="category-text">Digital &amp; Technology Transformation</span>
+                    </div>
+                  </a>
+                  <a href="/guide/strategic-design/">
+                    <div class="category-option">
+                      <span class="category-text">Strategic Design</span>
+                    </div>
+                  </a>
+                  <a href="/guide/organisational-design/">
+                    <div class="category-option">
+                      <span class="category-text">Organisational Design</span>
+                    </div>
+                  </a>
+                  <a href="/guide/behavioural-insights/">
+                    <div class="category-option">
+                      <span class="category-text">Behavioural Insights</span>
+                    </div>
+                  </a>
+                  <a href="/guide/systems-change/">
+                    <div class="category-option">
+                      <span class="category-text">Systems Change</span>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="col-md-4 col-sm-4 topic-column">
+                  <a href="/guide/international-development/">
+                    <div class="category-option">
+                      <span class="category-text">International Development</span>
+                    </div>
+                  </a>
+                  <a href="/guide/facilitation-and-codesign/">
+                    <div class="category-option">
+                      <span class="category-text">Process Facilitation &amp; Co-Design</span>
+                    </div>
+                  </a>
+                  <a href="/guide/product-design/">
+                    <div class="category-option">
+                      <span class="category-text">Product Design</span>
+                    </div>
+                  </a>
+                  <a href="/guide/futures-and-foresight/">
+                    <div class="category-option">
+                      <span class="category-text">Futures &amp; Foresight</span>
+                    </div>
+                  </a>
+                </div>
+
+              </div>
 
 
+
+              <div id="take-action-box" class="category-row wpb_column vc_column_container col-md-6 vc_col-sm-12">
+
+                <h2 id="take-action" class="category-header links-header">Take action</h2>
+
+                <a href="/guide/design-new-strategy/">
+                  <div class="category-option">
+                    <span class="category-text">Design a new strategy</span>
+                  </div>
+                </a>
+                <a href="/guide/clarify-or-understand/">
+                  <div class="category-option">
+                    <span class="category-text">Clarify a problem or understand a situation</span>
+                  </div>
+                </a>
+                <a href="/guide/improve-existing-process/">
+                  <div class="category-option">
+                    <span class="category-text">Improve, create, or redesign an existing process or program</span>
+                  </div>
+                </a>
+                <a href="/guide/new-team-or-partnership/">
+                  <div class="category-option">
+                    <span class="category-text">Create a new team or partnership</span>
+                  </div>
+                </a>
+              </div>
+
+
+
+              <div id="connect-box" class="category-row wpb_column vc_column_container col-md-6 vc_col-sm-12">
+
+                <h2 id="connect" class="category-header links-header">Connect</h2>
+
+                <a href="/guide/facilitate-collaboration/">
+                  <div class="category-option">
+                    <span class="category-text">Facilitate collaboration within and outside of my organisation</span>
+                  </div>
+                </a>
+                <a href="/guide/connect-with-others/">
+                  <div class="category-option">
+                    <span class="category-text">Connect with others who want to share practices and cases</span>
+                  </div>
+                </a>
+                <a href="/guide/discover-other-governments/">
+                  <div class="category-option">
+                    <span class="category-text">Discover what is working for other governments</span>
+                  </div>
+                </a>
+                <a href="/guide/experts-and-advisors/">
+                  <div class="category-option">
+                    <span class="category-text">Find experts or advisors who can assist me</span>
+                  </div>
+                </a>
+              </div>
+
+
+            </section>
+
+            <section id="more-info-section" class="browse-page-content category-row wpb_column vc_column_container col-md-12 vc_col-sm-12">
+
+              <?php the_content(); ?>
+
+            </section>
 
 
 
