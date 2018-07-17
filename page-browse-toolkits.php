@@ -24,7 +24,7 @@
               <div class="search-field">
                 &nbsp;
                 <?php
-                  echo do_shortcode('[searchandfilter id="1414"]');
+                  echo do_shortcode('[searchandfilter id="1902"]');
                 ?>
               </div>
 
