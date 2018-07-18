@@ -2113,12 +2113,13 @@ Search results styling
 }
 
 
-
-#browse-options p,
+#browse-options .browse-page-content p,
+.browse-page-content p,
 #browse-options a,
 #more-info-section p {
  font-size: 1.15em;
- line-height: 1.5em;
+ line-height: 1.6em;
+ max-width: 600px;
 
 }
 
