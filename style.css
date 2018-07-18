@@ -2132,10 +2132,13 @@ Search results styling
 
 #browse-options #explore-box {
   display: block;
-  border: 1px solid #e3e3e3;
+  background-color: #f7fbfe;
+  border: 1px solid #dbe7ef;
   border-radius: 8px;
   margin: 0;
   overflow: auto;
+  padding: 2em 0em 1em 2em;
+  background-color:
 }
 
 #browse-options .topic-column {
@@ -2149,6 +2152,7 @@ Search results styling
   border-radius: 8px;
   height: 5em;
   margin: 0;
+  padding-bottom: 1em;
 }
 
 #browse-options a:hover {
