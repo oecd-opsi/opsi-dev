@@ -2228,7 +2228,7 @@ GUIDE PAGES
 
 #guide-header h1.guide-title {
   font-size: 2.8em;
-  padding-bottom: .5em;
+  padding-bottom: 0em;
 }
 
 .toolkit-guide #guide-main-content {
@@ -2248,4 +2248,8 @@ GUIDE PAGES
   line-height: 1.35em;
   padding-right: 4em;
   padding-top: 1.2em;
+}
+
+.toolkit-guide #guide-main-content ul {
+  margin-bottom: 1.8em;
 }
