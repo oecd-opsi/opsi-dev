@@ -11,7 +11,7 @@
 
 
   <?php while ( have_posts() ) : the_post(); $postid = get_the_ID(); ?>
-          <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+          <article class="toolkit-guide" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
                   <!-- Display featured image in right-aligned floating div -->
 
 
@@ -32,7 +32,7 @@
               <p>sidebar goes here</p>
 
             </section>
-            
+
 
 
 

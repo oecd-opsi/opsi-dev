@@ -2216,11 +2216,19 @@ Search results styling
   color: #337ab7;
 }
 
-
-
-
-
-
 #browse-options .action-boxes a:hover {
   text-decoration: underline;
+}
+
+
+/*
+GUIDE PAGES
+*/
+
+
+.toolkit-guide #guide-main-content,
+.toolkit-guide #guide-main-content p {
+  font-size: 1.15em;
+  line-height: 1.6em;
+  max-width: 740px;
 }
