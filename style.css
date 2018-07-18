@@ -2227,7 +2227,7 @@ GUIDE PAGES
 
 
 .toolkit-guide #guide-header {
-  background: url(images/opsi-bg-top-pieces.jpg) no-repeat top right;
+  /* background: url(images/opsi-bg-top-pieces.jpg) no-repeat top right; */
 }
 
 #guide-header h1.guide-title {
