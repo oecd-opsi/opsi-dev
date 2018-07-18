@@ -2144,7 +2144,7 @@ Search results styling
   margin: 0;
   overflow: auto;
   padding: 2em 0em 1em 2em;
-  margin-bottom: 2em;
+  margin-bottom: 0em;
 }
 
 #browse-options .topic-column {
@@ -2185,7 +2185,7 @@ Search results styling
   border: 1px solid #dbe7ef;
   border-radius: 8px;
   height: auto;
-  margin: .6em 2em .6em 0em;
+  margin: .5em 2em .5em 0em;
 
 }
 
