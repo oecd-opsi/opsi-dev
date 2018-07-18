@@ -8,7 +8,6 @@
 
 
 
-  <div class="col-sm-12">
 
 
   <?php while ( have_posts() ) : the_post(); $postid = get_the_ID(); ?>
@@ -203,7 +202,6 @@
 
 
 
-    </div>
 
   <?php wp_reset_query(); ?>
 

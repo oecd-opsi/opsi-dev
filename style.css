@@ -2082,6 +2082,22 @@ Search results styling
 
 
 
+#search-section {
+  display: block;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+#search-section .search-field ul li {
+  display: inline;
+}
+
+#search-section .search-field input.sf-input-text {
+  width: 400px;
+  max-width: 100%;
+}
 
 
 
@@ -2102,6 +2118,7 @@ Search results styling
   border: 1px solid #e3e3e3;
   border-radius: 8px;
   margin: 0;
+  overflow: auto;
 }
 
 #browse-options .topic-column {
@@ -2116,6 +2133,10 @@ Search results styling
   border-radius: 8px;
   height: 5em;
   margin: 0;
+}
+
+#browse-options a:hover {
+  color: #337ab7;
 }
 
 #browse-options .action-boxes span.category-text {
