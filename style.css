@@ -2088,7 +2088,9 @@ Search results styling
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  background: #ccc;
+  background: url(images/opsi-background-texture.jpg) no-repeat center center;
+  padding: 7em 1em 9em;
+  margin-top: 1em;
 }
 
 #search-section .search-field ul li {
@@ -2108,8 +2110,8 @@ Search results styling
 }
 
 .browse-page-content h2 {
-  font-size: 1.5em;
-  padding-top: 4.3em;
+  font-size: 2em;
+  padding-top: 2.5em;
 }
 
 
