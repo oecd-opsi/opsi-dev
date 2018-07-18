@@ -2114,6 +2114,16 @@ Search results styling
   max-width: 100%;
 }
 
+#intro-section p a {
+  color: #337ab7;
+}
+
+#intro-section p a:hover {
+  color: #337ab7;
+  text-decoration: underline;
+}
+
+
 #browse-options {
   margin-bottom: 4em;
 }
@@ -2158,7 +2168,6 @@ Search results styling
   height: auto;
   margin: 0;
   padding-bottom: 1em;
-
 }
 
 #browse-options #take-action-box,
