@@ -18,7 +18,7 @@
             <section id="search-section">
 
               <h1 class="landing-title"><?php the_title(); ?></h1>
-              <h4 class="landing-subtitle">What do you want to accomplish?</h4>
+              <h4 class="landing-subtitle">Where do you want to start?</h4>
 
               <div class="search-field">
                 &nbsp;
