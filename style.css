@@ -2084,13 +2084,23 @@ Search results styling
 
 #search-section {
   display: block;
-  max-width: 90%;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
   background: url(images/opsi-background-texture.jpg) no-repeat center center;
   padding: 7em 1em 9em;
-  margin-top: 1em;
+  margin-top: 2em;
+  color: #fff;
+}
+
+#search-section h1.landing-title {
+  font-size: 2.6em;
+  padding-bottom: 0;
+}
+
+#search-section h4.landing-subtitle {
+  font-style: italic;
+  font-size: 1.5em;
 }
 
 #search-section .search-field ul li {
@@ -2111,7 +2121,7 @@ Search results styling
 
 .browse-page-content h2 {
   font-size: 2em;
-  padding-top: 2.5em;
+  padding-top: 2.2em;
 }
 
 
