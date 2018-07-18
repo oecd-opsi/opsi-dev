@@ -38,7 +38,7 @@
 
             </section>
 
-            <section id="browse-options" class="browse-page-content">
+            <section id="browse-options" class="browse-page-content category-row wpb_column vc_column_container col-md-12 vc_col-sm-12">
 
               <h2 id="explore-topics" class="category-header links-header">Explore topics</h2>
               <div id="explore-box" class="category-row wpb_column vc_column_container vc_col-sm-12">

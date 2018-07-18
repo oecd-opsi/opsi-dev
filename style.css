@@ -2088,6 +2088,7 @@ Search results styling
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+  background: #ccc;
 }
 
 #search-section .search-field ul li {
@@ -2122,7 +2123,6 @@ Search results styling
 }
 
 #browse-options .topic-column {
-  clear: left;
   display: block;
 }
 
