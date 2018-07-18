@@ -133,12 +133,22 @@
         <div class="container">
           <div class="row">
             <div class="col-md-12 hidden-xs">
-              <?php if (!is_front_page() && bp_is_blog_page() ) { ?>
               <div class="nitrobreadcrumb">
-                <?php // custom_breadcrumbs(); ?>
-                <?php bcn_display(); ?>
+
+                <span property="itemListElement" typeof="ListItem">
+                  <a property="item" typeof="WebPage" title="Go to Observatory of Public Sector Innovation." href="/" class="home"><span property="name"><i class="fa fa-home"></i></span></a><meta property="position" content="1">
+                </span> &gt;
+                <span property="itemListElement" typeof="ListItem"><span property="name">
+                  <a property="item" typeof="WebPage" title="All toolkits" href="/browse-toolkits/" class="home">Toolkits</a><meta property="position" content="1">
+                </span><meta property="position" content="2"></span>
+                &gt;
+                <span property="itemListElement" typeof="ListItem"><span property="name">
+                  <?php the_title(); ?>
+                </span><meta property="position" content="2"></span>
               </div>
-              <?php } ?>
+            </div>
+                
+              </div>
             </div>
 
         <?php
