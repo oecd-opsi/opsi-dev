@@ -2114,11 +2114,13 @@ Search results styling
   max-width: 100%;
 }
 
-#intro-section p a {
+#intro-section p a,
+#more-info-section p a {
   color: #337ab7;
 }
 
-#intro-section p a:hover {
+#intro-section p a:hover,
+#more-info-section p a:hover {
   color: #337ab7;
   text-decoration: underline;
 }
