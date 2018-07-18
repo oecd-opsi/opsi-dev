@@ -183,7 +183,7 @@
 
             </section>
 
-            <hr/>
+            <hr id="browse-section-rule">
 
             <section id="more-info-section" class="browse-page-content category-row wpb_column vc_column_container col-md-12 vc_col-sm-12">
 

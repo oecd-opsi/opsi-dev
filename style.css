@@ -2144,7 +2144,9 @@ Search results styling
   padding-top: 1.4em;
 }
 
-
+#browse-section-rule {
+  border: 1px solid #dbe7ef;
+}
 
 #browse-options #explore-box {
   display: block;
