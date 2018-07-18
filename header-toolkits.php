@@ -135,6 +135,7 @@
             <div class="col-md-12 hidden-xs">
               <div class="nitrobreadcrumb">
 
+                <!-- special breadcrumb handling for toolkit templates - not as dynamic as would be ideal -->
                 <span property="itemListElement" typeof="ListItem">
                   <a property="item" typeof="WebPage" title="Go to Observatory of Public Sector Innovation." href="/" class="home"><span property="name"><i class="fa fa-home"></i></span></a><meta property="position" content="1">
                 </span> &gt;
@@ -147,8 +148,7 @@
                 </span><meta property="position" content="2"></span>
               </div>
             </div>
-                
-              </div>
+
             </div>
 
         <?php
