@@ -2090,17 +2090,18 @@ Search results styling
   background: url(images/opsi-background-texture.jpg) no-repeat center center;
   padding: 7em 1em 9em;
   margin-top: 2em;
-  color: #fff;
 }
 
 #search-section h1.landing-title {
   font-size: 2.6em;
   padding-bottom: 0;
+  color: #fff;
 }
 
 #search-section h4.landing-subtitle {
   font-style: italic;
   font-size: 1.5em;
+  color: #fff;
 }
 
 #search-section .search-field ul li {
@@ -2119,7 +2120,7 @@ Search results styling
 #more-info-section p {
  font-size: 1.15em;
  line-height: 1.6em;
- max-width: 600px;
+ max-width: 740px;
 
 }
 
@@ -2138,11 +2139,30 @@ Search results styling
   margin: 0;
   overflow: auto;
   padding: 2em 0em 1em 2em;
-  background-color:
 }
 
 #browse-options .topic-column {
   display: block;
+}
+
+#browse-options .topic-column a {
+  display: block;
+  border: none;
+  border-radius: none;
+  height: auto;
+  margin: 0;
+  padding-bottom: 1em;
+
+}
+
+#browse-options .topic-column span.category-text {
+  display: block;
+  font-weight: bold;
+  height: auto;
+  text-align: left;
+  vertical-align: middle;
+  margin: 0em 0em 0em 0em;
+  color: #337ab7;
 }
 
 
@@ -2152,7 +2172,6 @@ Search results styling
   border-radius: 8px;
   height: 5em;
   margin: 0;
-  padding-bottom: 1em;
 }
 
 #browse-options a:hover {
@@ -2169,23 +2188,7 @@ Search results styling
   color: #337ab7;
 }
 
-#browse-options .topic-column a {
-  display: block;
-  border: none;
-  border-radius: none;
-  height: auto;
-  margin: 0;
-}
 
-#browse-options .topic-column span.category-text {
-  display: block;
-  font-weight: bold;
-  height: auto;
-  text-align: left;
-  vertical-align: middle;
-  margin: 0em 0em 0em 0em;
-  color: #337ab7;
-}
 
 
 
