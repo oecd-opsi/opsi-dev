@@ -2114,8 +2114,11 @@ Search results styling
 
 
 
-#browse-options {
-
+#browse-options p,
+#browse-options a,
+#more-info-section p {
+ font-size: 1.15em;
+ line-height: 1.5em;
 
 }
 
