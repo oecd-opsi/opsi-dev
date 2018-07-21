@@ -235,6 +235,8 @@
 
             // the query
 //            $args = array('post_type' => 'post');
+
+            $args['search_filter_id'] = 1414;
             $args = array(
               	'related-posts' => array(
               		array(
@@ -244,8 +246,6 @@
               		)
               	)
               );
-            $args['search_filter_id'] = 1414;
-
 
             $the_query = new WP_Query( $args ); ?>
 
