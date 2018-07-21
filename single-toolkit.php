@@ -143,7 +143,15 @@
         </div>
         <div class="meta-column col-md-3 col-sm-3 col-xs-6">
           <h5>Date Published</h5>
-          <p><a href="#">2016</a></p>
+          <?php
+          $features = get_field('last-updated');
+          if( $features ): ?>
+            <?php foreach( $year as $years ): ?>
+              <p>
+              <a href="<?php echo get_term_link( $year ); ?>"><?php echo $year->name; ?></a>
+              </p>
+            <?php endforeach; ?>
+          <?php endif; ?>
           <h5>Country of Origin</h5>
           <p><a href="#">United Kingdom</a></p>
         </div>
