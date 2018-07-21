@@ -81,13 +81,13 @@
           </div>
           <div class="meta-column col-md-6 col-sm-6 col-xs-12">
 
-            <h5>Country of Origin</h5>
+            <h5>License</h5>
             <?php
-            $countries = get_field('country-territory');
-            if( $countries ): ?>
-              <?php foreach( $countries as $country ): ?>
+            $licenses = get_field('license');
+            if( $licenses ): ?>
+              <?php foreach( $licenses as $license ): ?>
                 <p>
-                <a href="<?php echo get_term_link( $country ); ?>"><?php echo $country->name; ?></a>
+                <a href="<?php echo get_term_link( $license ); ?>"><?php echo $license->name; ?></a>
                 </p>
               <?php endforeach; ?>
             <?php endif; ?>
@@ -151,11 +151,26 @@
           <?php endif; ?>
         </div>
         <div class="meta-column col-md-3 col-sm-3 col-xs-6">
+          <h5>Country of Origin</h5>
+          <?php
+          $countries = get_field('country-territory');
+          if( $countries ): ?>
+            <?php foreach( $countries as $country ): ?>
+              <p>
+              <a href="<?php echo get_term_link( $country ); ?>"><?php echo $country->name; ?></a>
+              </p>
+            <?php endforeach; ?>
+          <?php endif; ?>
+
           <h5>Date Published</h5>
               <p>
               <?php the_field('last-updated'); ?>
               </p>
 
+
+
+        </div>
+        <div class="meta-column col-md-3 col-sm-3 col-xs-6">
           <h5>Formats</h5>
           <?php
               $formats = get_field('format');
@@ -165,19 +180,6 @@
                   <a href="<?php echo get_term_link( $format ); ?>"><?php echo $format->name; ?></a>
                   </p>
                 <?php endforeach; ?>
-          <?php endif; ?>
-
-        </div>
-        <div class="meta-column col-md-3 col-sm-3 col-xs-6">
-          <h5>License</h5>
-          <?php
-          $licenses = get_field('license');
-          if( $licenses ): ?>
-            <?php foreach( $licenses as $license ): ?>
-              <p>
-              <a href="<?php echo get_term_link( $license ); ?>"><?php echo $license->name; ?></a>
-              </p>
-            <?php endforeach; ?>
           <?php endif; ?>
         </div>
       </div>
