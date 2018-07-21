@@ -81,27 +81,36 @@
           </div>
           <div class="meta-column col-md-6 col-sm-6 col-xs-12">
 
-            <h5>Formats</h5>
+            <h5>Country of Origin</h5>
             <?php
-            $formats = get_field('format');
-            if( $formats ): ?>
-            	<?php foreach( $formats as $format ): ?>
-            		<p>
-            		<a href="<?php echo get_term_link( $format ); ?>"><?php echo $format->name; ?></a>
+            $countries = get_field('country-territory');
+            if( $countries ): ?>
+              <?php foreach( $countries as $country ): ?>
+                <p>
+                <a href="<?php echo get_term_link( $country ); ?>"><?php echo $country->name; ?></a>
                 </p>
-            	<?php endforeach; ?>
+              <?php endforeach; ?>
             <?php endif; ?>
 
-            <h5>License</h5>
+
+            <h5>Source files</h5>
             <?php
-            $licenses = get_field('license');
-            if( $licenses ): ?>
-            	<?php foreach( $licenses as $license ): ?>
-            		<p>
-            		<a href="<?php echo get_term_link( $license ); ?>"><?php echo $license->name; ?></a>
-                </p>
-            	<?php endforeach; ?>
+
+            $file1 = get_field('source-file-1');
+
+            if( $file1 ):
+            	// vars
+            	$url = $file1['url'];
+            	$title = $file1['title'];
+            	 ?>
+            	<p><a href="<?php echo $url; ?>" title="<?php echo $title; ?>">
+            		<?php echo $title; ?>
+            	</a></p>
+
             <?php endif; ?>
+
+
+
 
           </div>
         </div>
@@ -146,32 +155,29 @@
               <p>
               <?php the_field('last-updated'); ?>
               </p>
-          <h5>Country of Origin</h5>
+
+          <h5>Formats</h5>
           <?php
-          $countries = get_field('country-territory');
-          if( $countries ): ?>
-            <?php foreach( $countries as $country ): ?>
-              <p>
-              <a href="<?php echo get_term_link( $country ); ?>"><?php echo $country->name; ?></a>
-              </p>
-            <?php endforeach; ?>
+              $formats = get_field('format');
+              if( $formats ): ?>
+                <?php foreach( $formats as $format ): ?>
+                  <p>
+                  <a href="<?php echo get_term_link( $format ); ?>"><?php echo $format->name; ?></a>
+                  </p>
+                <?php endforeach; ?>
           <?php endif; ?>
+
         </div>
         <div class="meta-column col-md-3 col-sm-3 col-xs-6">
-          <h5>Source files</h5>
+          <h5>License</h5>
           <?php
-
-          $file1 = get_field('source-file-1');
-
-          if( $file1 ):
-          	// vars
-          	$url = $file1['url'];
-          	$title = $file1['title'];
-          	 ?>
-          	<p><a href="<?php echo $url; ?>" title="<?php echo $title; ?>">
-          		<?php echo $title; ?>
-          	</a></p>
-
+          $licenses = get_field('license');
+          if( $licenses ): ?>
+            <?php foreach( $licenses as $license ): ?>
+              <p>
+              <a href="<?php echo get_term_link( $license ); ?>"><?php echo $license->name; ?></a>
+              </p>
+            <?php endforeach; ?>
           <?php endif; ?>
         </div>
       </div>
