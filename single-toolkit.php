@@ -144,8 +144,8 @@
         <div class="meta-column col-md-3 col-sm-3 col-xs-6">
           <h5>Date Published</h5>
           <?php
-          $features = get_field('last-updated');
-          if( $features ): ?>
+          $years = get_field('last-updated');
+          if( $years ): ?>
             <?php foreach( $year as $years ): ?>
               <p>
               <a href="<?php echo get_term_link( $year ); ?>"><?php echo $year->name; ?></a>
