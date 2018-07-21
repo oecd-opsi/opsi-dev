@@ -272,58 +272,7 @@
     </p>
 
 
-    <div class="row col-md-12 col-sm-12 col-xs-12">
 
-
-      <div class="results-meta-column col-md-4 col-sm-4 col-xs-4">
-      <!-- Publisher -->
-      <p class="results-meta-heading">Publisher</p>
-      <?php
-      $publishers = get_field('publisher');
-      if( $publishers ): ?>
-        <?php foreach( $publishers as $publisher ): ?>
-          <p class="search-results-meta">
-          <a href="<?php echo get_term_link( $publisher ); ?>"><?php echo $publisher->name; ?></a>
-          </p>
-        <?php endforeach; ?>
-      <?php endif; ?>
-      <!-- End Publisher -->
-      </div>
-
-
-    <div class="results-meta-column col-md-4 col-sm-4 col-xs-4">
-    <!-- Discipline or practice -->
-    <p class="results-meta-heading">Discipline or Practice</p>
-    <?php
-    $disciplines = get_field('discipline-or-practice');
-    if( $disciplines ): ?>
-      <?php foreach( $disciplines as $discipline ): ?>
-        <p class="search-results-meta">
-        <a href="<?php echo get_term_link( $discipline ); ?>"><?php echo $discipline->name; ?></a>
-        </p>
-      <?php endforeach; ?>
-    <?php endif; ?>
-    <!-- End Discipline or practice -->
-    </div>
-
-
-
-    <div class="results-meta-column col-md-4 col-sm-4 col-xs-4">
-    <!-- Features  -->
-    <p class="results-meta-heading">Features</p>
-    <?php
-    $features = get_field('toolkit-features');
-    if( $features ): ?>
-      <?php foreach( $features as $feature ): ?>
-        <p class="search-results-meta">
-        <a href="<?php echo get_term_link( $feature ); ?>"><?php echo $feature->name; ?></a>
-        </p>
-      <?php endforeach; ?>
-    <?php endif; ?>
-    <!-- End Features -->
-    </div>
-
-    </div>
     </div>
     </div> <!-- result item -->
 
