@@ -177,7 +177,7 @@
               if( $formats ): ?>
                 <?php foreach( $formats as $format ): ?>
                   <p>
-                  <a href="<?php echo get_term_link( $format ); ?>"><?php echo $format->name; ?></a>
+                  <?php echo $format->name; ?>
                   </p>
                 <?php endforeach; ?>
           <?php endif; ?>
