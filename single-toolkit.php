@@ -161,13 +161,12 @@
           <h5>Source files</h5>
           <?php
 
-          $file = get_field('source-file');
+          $file1 = get_field('source-file-1');
 
-          if( $file ):
+          if( $file1 ):
           	// vars
-          	$url = $file['url'];
-          	$title = $file['title'];
-          	$caption = $file['caption'];
+          	$url = $file1['url'];
+          	$title = $file1['title'];
           	 ?>
           	<p><a href="<?php echo $url; ?>" title="<?php echo $title; ?>">
           		<?php echo $title; ?>
