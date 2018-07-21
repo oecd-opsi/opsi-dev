@@ -42,12 +42,8 @@
       <div id="intro-section" class="col-md-7 col-sm-7 col-xs-12 toolkit-section">
 
         <h1 class="toolkit-title">
-          <?php the_title(); ?>
+          <a href="<?php the_field('url'); ?>"><?php the_title(); ?></a>
         </h1>
-
-        <h6 class="toolkit-url">
-          <a href="<?php the_field('url'); ?>"><?php the_field('url'); ?></a>
-        </h6>
 
         <p class="toolkit-description">
           <?php the_field('description'); ?>
@@ -81,16 +77,9 @@
           </div>
           <div class="meta-column col-md-6 col-sm-6 col-xs-12">
 
-            <h5>License</h5>
-            <?php
-            $licenses = get_field('license');
-            if( $licenses ): ?>
-              <?php foreach( $licenses as $license ): ?>
-                <p>
-                <a href="<?php echo get_term_link( $license ); ?>"><?php echo $license->name; ?></a>
-                </p>
-              <?php endforeach; ?>
-            <?php endif; ?>
+            <h5>Link to toolkit</h5>
+            <p><a href="<?php the_field('url'); ?>"><?php the_field('url'); ?></a></p>
+
 
 
             <h5>Source files</h5>
@@ -171,6 +160,17 @@
 
         </div>
         <div class="meta-column col-md-3 col-sm-3 col-xs-6">
+          <h5>License</h5>
+          <?php
+          $licenses = get_field('license');
+          if( $licenses ): ?>
+            <?php foreach( $licenses as $license ): ?>
+              <p>
+              <a href="<?php echo get_term_link( $license ); ?>"><?php echo $license->name; ?></a>
+              </p>
+            <?php endforeach; ?>
+          <?php endif; ?>
+
           <h5>Formats</h5>
           <?php
               $formats = get_field('format');
