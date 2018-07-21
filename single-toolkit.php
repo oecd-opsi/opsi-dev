@@ -227,6 +227,7 @@
     <h2>Similar resources</h2>
 
     // the query
+    <?php
     $args = array('post_type' => 'post');
     $args['search_filter_id'] = 1414;
 
@@ -324,9 +325,7 @@ if( $features ): ?>
     <?php endwhile; ?>
     <!-- end of the loop -->
 
-    <!-- pagination here -->
 
-  
 
 
 
