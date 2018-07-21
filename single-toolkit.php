@@ -144,10 +144,18 @@
         <div class="meta-column col-md-3 col-sm-3 col-xs-6">
           <h5>Date Published</h5>
               <p>
-              <?php the_field('description'); ?>
+              <?php the_field('last-updated'); ?>
               </p>
           <h5>Country of Origin</h5>
-          <p><a href="#">United Kingdom</a></p>
+          <?php
+          $countries = get_field('country-territory');
+          if( $countries ): ?>
+            <?php foreach( $countries as $country ): ?>
+              <p>
+              <a href="<?php echo get_term_link( $country ); ?>"><?php echo $country->name; ?></a>
+              </p>
+            <?php endforeach; ?>
+          <?php endif; ?>
         </div>
         <div class="meta-column col-md-3 col-sm-3 col-xs-6">
           <h5>Source files</h5>
