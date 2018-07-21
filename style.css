@@ -1917,11 +1917,18 @@ div.translate select::-ms-expand {
 .toolkit-section h1.toolkit-title {
   padding-top: 0;
   margin-top: 0;
+  padding-bottom: 8px;
 }
 
 .toolkit-section p {
   line-height: 1.2em;
+  padding-top: 1em;
 }
+
+.toolkit-section .toolkit-description {
+  line-height: 1.4em;
+}
+
 
 #save-and-share {
   padding: 0;
