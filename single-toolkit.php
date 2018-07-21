@@ -234,18 +234,19 @@
 
 
             // the query
-//            $args = array('post_type' => 'post');
+           $args = array('post_type' => 'post');
 
+          // $args = array(
+          //     'related-posts' => array(
+          //       array(
+          //         'taxonomy' => 'discipline-or-practice',
+          //         'field' => 'slug',
+          //         'terms' => 'strategic-design'
+          //       )
+          //     )
+          //   );
             $args['search_filter_id'] = 1414;
-            $args = array(
-              	'related-posts' => array(
-              		array(
-              			'taxonomy' => 'discipline-or-practice',
-              			'field' => 'slug',
-              			'terms' => 'strategic-design'
-              		)
-              	)
-              );
+
 
             $the_query = new WP_Query( $args ); ?>
 
