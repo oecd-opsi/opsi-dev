@@ -165,22 +165,24 @@
                 </a>
               </div>
 
+              <div id="search-section">
 
-            </section>
+                <h2 id="search-header" class="category-header links-header">Search keywords</h2>
+                <p class="search-help-text">Helper text here</p>
 
-            <section id="search-section">
+                <div class="search-field">
+                  &nbsp;
+                  <?php
+                    echo do_shortcode('[searchandfilter id="1902"]');
+                  ?>
+                </div>
 
-              <h2 id="search-header" class="category-header links-header">Search keywords</h2>
-              <p class="search-help-text">Helper text here</p>
-
-              <div class="search-field">
-                &nbsp;
-                <?php
-                  echo do_shortcode('[searchandfilter id="1902"]');
-                ?>
               </div>
 
+
             </section>
+
+
 
 
 

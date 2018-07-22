@@ -2187,9 +2187,12 @@ p.search-explainer {
 }
 
 #landing-header-section h4.landing-subtitle {
-  font-style: italic;
   font-size: 1.5em;
+  line-height: 1.5em;
   color: #fff;
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #search-section {
