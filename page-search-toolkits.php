@@ -138,7 +138,7 @@ if( $features ): ?>
 
 <?php
         do_action('search_filter_setup_pagination', 1414);
-        <?php wpbeginner_numeric_posts_nav(); ?>
+        wpbeginner_numeric_posts_nav(); 
   ?>
 
         <!-- pagination here -->
