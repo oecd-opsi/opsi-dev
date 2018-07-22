@@ -2481,8 +2481,8 @@ h2.view-all-link {
   color: #337ab7;
 }
 
-#guide-header #skip-for-mobile p a,
-#guide-header #skip-for-mobile p a:hover {
+#guide-header #skip-for-mobile a,
+#guide-header #skip-for-mobile a:hover {
   color: #337ab7;
 }
 
