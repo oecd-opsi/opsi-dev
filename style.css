@@ -2052,6 +2052,10 @@ p.search-explainer {
   padding-left: 28px;
 }
 
+#filters-section .chosen-container {
+  width: 100%;
+}
+
 .searchandfilter ul li,
 .searchandfilter ul li ul li {
   padding: 2px;
