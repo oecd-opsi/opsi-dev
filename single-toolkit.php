@@ -236,7 +236,7 @@
             // the query
            $args = array('post_type' => 'post');
            $args['search_filter_id'] = 1414;
-           $the_query = new WP_Query( 'discipline-or-practice=strategic-design' ); ?>
+           $the_query = new WP_Query( 'discipline-or-practice=strategic-design&post_type=toolkit' ); ?>
 
             <?php if ( $the_query->have_posts() ) : ?>
             <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
