@@ -15,28 +15,13 @@
                   <!-- Display featured image in right-aligned floating div -->
 
 
-            <section id="search-section">
+            <section id="landing-header-section">
 
               <h1 class="landing-title"><?php the_title(); ?></h1>
-              <h4 class="landing-subtitle">Where do you want to start?</h4>
-
-              <div class="search-field">
-                &nbsp;
-                <?php
-                  echo do_shortcode('[searchandfilter id="1902"]');
-                ?>
-              </div>
+              <h4 class="landing-subtitle">A compendium of toolkits for public sector innovation and transformation, curated by OPSI and our partners around the world</h4>
 
             </section>
 
-            <section id="intro-section" class="browse-page-content category-row wpb_column vc_column_container col-md-12 vc_col-sm-12">
-
-              <h2 id="intro-text" class="category-header text-header">Welcome to the OPSI Meta-Toolkit</h2>
-              <p class="browse-page-content">
-                Toolkits are a great way to share innovative methods and practices. A plethora of free innovation toolkits, playbooks and guides exist to help people identify, develop and practice necessary skills and apply new ways of reaching an outcome. We built this “Meta-Toolkit” to help you find the ones best suited to you and your situation. <a href="#how-it-works">Learn more</a>
-              </p>
-
-            </section>
 
             <section id="browse-options" class="browse-page-content category-row wpb_column vc_column_container col-md-12 vc_col-sm-12">
 
@@ -182,6 +167,22 @@
 
 
             </section>
+
+            <section id="search-section">
+
+              <h2 id="search-header" class="category-header links-header">Search keywords</h2>
+              <p class="search-help-text">Helper text here</p>
+
+              <div class="search-field">
+                &nbsp;
+                <?php
+                  echo do_shortcode('[searchandfilter id="1902"]');
+                ?>
+              </div>
+
+            </section>
+
+
 
             <hr id="browse-section-rule">
 
