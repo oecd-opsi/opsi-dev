@@ -238,13 +238,14 @@
            $args = array(
              'post_type'   => 'toolkit',
              'post_status' => 'publish',
+             'name' => '-the-partnerships-analysis-tool', // removes the current page from being shown
              'posts_per_page' => 4,
              'nopaging' => true,
              'tax_query'   => array(
              	array(
              		'taxonomy' => 'discipline-or-practice',
              		'field'    => 'slug',
-             		'terms'    => 'strategic-design'
+             		'terms'    => 'strategic-design' // current discipline or practice
              	)
              )
             );
