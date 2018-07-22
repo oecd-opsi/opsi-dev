@@ -2105,6 +2105,10 @@ p.search-explainer {
   /* border: 1px #ccc solid; */
 }
 
+.results-content {
+  padding-right: 0;
+}
+
 .results-content p {
   margin: 0 0 4px 0;
 }
