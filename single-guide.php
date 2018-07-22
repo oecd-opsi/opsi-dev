@@ -31,18 +31,20 @@
 
               <section id="referral-section" class="toolkit-section col-md-12 col-sm-12 col-xs-12">
                 <div class="row">
-                  <div class="meta-column col-md-6 col-sm-6 col-xs-12">
+                  <div class="meta-column col-md-12 col-xs-12">
                     <div id="cases-referral-block" class="referral-block">
-                      <h5>See cases from others doing this in government</h5>
+                      <h5>The OPSI community has experts in this area</h5>
+                      <p><a href="/about-observatory-of-public-sector-innovation/about-our-in-country-contacts/">Connect with them</a></p>
+                    </div>
+                  </div>
+                  <div class="meta-column col-md-12 col-xs-12">
+                    <div id="cases-referral-block" class="referral-block">
+                      <h5>See how other governments are doing this work</h5>
                       <p><a href="/our-work/case-studies/">Go to case studies</a></p>
                     </div>
                   </div>
-                  <div class="meta-column col-md-6 col-sm-6 col-xs-12">
-                    <div id="cases-referral-block" class="referral-block">
-                      <h5>Find experts and advisers who can assist me with this</h5>
-                      <p><a href="/about-observatory-of-public-sector-innovation/about-our-in-country-contacts/">Go to advice</a></p>
-                    </div>
-                  </div>
+
+
                 </div>
               </section>
 
