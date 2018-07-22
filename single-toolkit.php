@@ -239,7 +239,6 @@
            $args = array(
              'post_type'   => 'toolkit',
              'post_status' => 'publish',
-             'post__not_in' => array($currentID), // removes the current page from being shown
              'showposts' => 4,
              'nopaging' => true,
              'tax_query'   => array(
@@ -248,7 +247,9 @@
              		'field'    => 'slug',
              		'terms'    => 'strategic-design' // current discipline or practice
              	)
-             )
+            ),
+            'post__not_in' => array($currentID), // removes the current page from being shown
+
             );
 
            $the_query = new WP_Query( $args ); ?>
