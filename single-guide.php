@@ -49,18 +49,7 @@
                 <?php
                       $currentID = get_the_ID();
 
-                      $termID = get_term($taxonomy = 'discipline-or-practice');
-                      $disciplineSlug = $termID->slug;
-
-
-                      $disciplines = get_field('guide_discipline_or_practice');
-                      if( $disciplines ):
-                       foreach( array_reverse($disciplines) as $discipline ):
-
-                        $disciplineSlug = $discipline->name;
-
-                        endforeach;
-                    endif;
+                      $disciplineSlug = the_field('guide_discipline_or_practice');
 
 
                     $disciplineUpper = ucwords($disciplineSlug);
@@ -71,7 +60,7 @@
 
 
 
-                    <h2>Other toolkits related to <?php echo $disciplineUpper ?></h2>
+                    <h2>Toolkits for <?php echo $disciplineUpper ?></h2>
 
 
             <?php
@@ -144,7 +133,7 @@
 
 
 
-                <h4 class="view-all-link"><a href="/search-toolkits/?_sft_discipline-or-practice=<?php echo $disciplineHyphenated ?>">View all toolkits related to <?php echo $disciplineUpper ?></a></h4>
+                <h4 class="view-all-link"><a href="/search-toolkits/?_sft_discipline-or-practice=<?php echo $disciplineHyphenated ?>">View all toolkits for <?php echo $disciplineUpper ?></a></h4>
 
 
 
