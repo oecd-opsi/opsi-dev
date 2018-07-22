@@ -58,9 +58,13 @@
             <?php
             $publishers = get_field('publisher');
             if( $publishers ): ?>
-            	<?php foreach( $publishers as $publisher ): ?>
+            	<?php foreach( $publishers as $publisher ):
+                $termSlug = $publisher->name;
+                $termSlugLower = strtolower($termSlug);
+                $termSlugReady = str_replace(' ', '-', $termSlugLower);
+                ?>
             		<p>
-            		<a href="<?php echo get_term_link( $publisher ); ?>"><?php echo $publisher->name; ?></a>
+            		<a href="/search-toolkits/?_sft_toolkit-publisher=<?php echo $termSlugReady ?>"><?php echo $publisher->name; ?></a>
                 </p>
             	<?php endforeach; ?>
             <?php endif; ?>
@@ -70,6 +74,7 @@
             $disciplines = get_field('discipline-or-practice');
             if( $disciplines ): ?>
             	<?php foreach( $disciplines as $discipline ): ?>
+
             		<p>
             		<a href="<?php echo get_term_link( $discipline ); ?>"><?php echo $discipline->name; ?></a>
                 </p>
@@ -239,6 +244,8 @@
 
             endforeach;
         endif;
+
+
 
 
         $disciplineUpper = ucwords($disciplineSlug);
