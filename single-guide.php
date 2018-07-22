@@ -31,13 +31,13 @@
 
               <section id="referral-section" class="toolkit-section col-md-12 col-sm-12 col-xs-12">
                 <div class="row">
-                  <div class="meta-column col-md-12 col-xs-12">
+                  <div class="referral-box meta-column col-md-12 col-xs-12">
                     <div id="cases-referral-block" class="referral-block">
                       <h5>The OPSI community has experts in this area</h5>
                       <p><a href="/about-observatory-of-public-sector-innovation/about-our-in-country-contacts/">Connect with them</a></p>
                     </div>
                   </div>
-                  <div class="meta-column col-md-12 col-xs-12">
+                  <div class="referral-box meta-column col-md-12 col-xs-12">
                     <div id="cases-referral-block" class="referral-block">
                       <h5>See how other governments are doing this work</h5>
                       <p><a href="/our-work/case-studies/">Go to case studies</a></p>
@@ -57,7 +57,7 @@
 
 
 
-                    <h2>Toolkits for <?php echo $disciplineID ?></h2>
+                    <h2>Toolkits for showing <?php echo $disciplineID ?></h2>
 
 
             <?php
