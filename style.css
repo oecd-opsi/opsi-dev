@@ -2058,11 +2058,11 @@ p.search-explainer {
 
 #search-page-intro {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
+  margin-left: -16px;
+  margin-right: -16px;
+  text-align: left;
   background: url(images/opsi-background-texture.jpg) no-repeat center center;
-  padding: 7em 1em 9em;
+  padding: 2px 16px 28px;
   margin-top: 0px;
   margin-bottom: 1em;
 }
