@@ -2002,10 +2002,7 @@ Search results styling
 /////////////
 */
 
-p.search-explainer {
-  font-size: 1em
 
-}
 
 #filters-section {
   background-color: #f7fbfe;
@@ -2075,8 +2072,18 @@ p.search-explainer {
   margin-left: 16px;
 }
 
-#search-page-intro .search-explainer a,
-#search-page-intro .search-explainer a:hover {
+
+
+#search-page-intro p.search-explainer {
+  max-width: 720px;
+  line-height: 1em;
+  font-size: 1em;
+
+}
+
+
+#search-page-intro p.search-explainer a,
+#search-page-intro p.search-explainer a:hover {
   color: #337ab7;
 }
 

@@ -18,7 +18,7 @@
                <h1 class="search-title"><?php the_title(); ?></h1>
               </section>
 
-              <p class="search-explainer">Still in beta! You can also <a href="/toolkit-navigator/">browse toolkits here</a>, check out <a href="https://www.oecd-opsi.org/toolkit-taxonomy/">this blog post</a> for more information about how we're organizing toolkits into types and disciplines.</p>
+              <p class="search-explainer">Still in beta! You can also <a href="/toolkit-navigator/">browse all toolkits</a>, and check out <a href="https://www.oecd-opsi.org/toolkit-taxonomy/">this blog post</a> for more information about how we're organizing toolkits into types and disciplines.</p>
 
               <div class="entry-content"><?php // the_content(); ?></div>
 
