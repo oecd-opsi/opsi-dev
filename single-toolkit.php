@@ -242,7 +242,7 @@
 
           $disciplines = get_field('discipline-or-practice');
           if( $disciplines ):
-           foreach( $disciplines as $discipline ):
+           foreach( array_reverse($disciplines) as $discipline ):
 
             $disciplineSlug = $discipline->name;
 
