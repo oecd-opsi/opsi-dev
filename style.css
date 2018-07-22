@@ -1906,8 +1906,8 @@ div.translate select::-ms-expand {
 }
 
 #similar-resources-section h2 {
- padding-top: 1em;
- margin-bottom: 2em;
+ padding-top: 2em;
+ margin-bottom: 1.5em;
 }
 
 .toolkit-template-default .nitrobreadcrumb {
@@ -1930,6 +1930,10 @@ div.translate select::-ms-expand {
   text-decoration: underline;
 }
 
+#top-section .toolkit-image {
+  padding-bottom: 2em;
+}
+
 .toolkit-section p {
   line-height: 1.2em;
 }
@@ -1942,6 +1946,7 @@ div.translate select::-ms-expand {
 
 #save-and-share {
   padding: 0;
+  margin: 0px 16px 16px 16px;
 }
 
 .toolkit-section strong {
@@ -1960,7 +1965,7 @@ div.translate select::-ms-expand {
 }
 
 .toolkit-section .related-toolkits-column {
-  padding-bottom: 5em;
+  padding-bottom: 4em;
 }
 
 .toolkit-section .related-item-1,
