@@ -49,15 +49,21 @@
                 <?php
                       $currentID = get_the_ID();
 
-                      $disciplineID = the_field('guide_discipline_or_practice');
+                      $disciplines = get_field('discipline-or-practice');
+                      if( $disciplines ):
+                       foreach( array_reverse($disciplines) as $discipline ):
 
+                        $disciplineSlug = $discipline->name;
+
+                        endforeach;
+                      endif;
 
 
                     ?>
 
 
 
-                    <h2>Toolkits for showing <?php echo $disciplineID ?></h2>
+                    <h2>Toolkits for being <?php echo $disciplineSlug ?></h2>
 
 
             <?php
