@@ -44,8 +44,112 @@
                     </div>
                   </div>
 
-
                 </div>
+
+                <?php
+                      $currentID = get_the_ID();
+
+                      $termID = get_term($taxonomy = 'discipline-or-practice');
+                      $disciplineSlug = $termID->slug;
+
+
+                      $disciplines = get_field('discipline-or-practice');
+                      if( $disciplines ):
+                       foreach( array_reverse($disciplines) as $discipline ):
+
+                        $disciplineSlug = $discipline->name;
+
+                        endforeach;
+                    endif;
+
+
+                    $disciplineUpper = ucwords($disciplineSlug);
+                    $disciplineLower = strtolower($disciplineSlug);
+                    $disciplineHyphenated = str_replace(' ', '-', $disciplineLower);
+
+                    ?>
+
+
+
+                    <h2>Other toolkits related to <?php echo $disciplineUpper ?></h2>
+
+
+            <?php
+
+
+                       $args = array(
+                         'post_type'   => 'toolkit',
+                         'post_status' => 'publish',
+                         'tax_query'   => array(
+                         	array(
+                         		'taxonomy' => 'discipline-or-practice',
+                         		'field'    => 'slug',
+                         		'terms'    => $disciplineSlug // current discipline or practice
+                         	)
+                        ),
+                        'post__not_in' => array($currentID), // removes the current page from being shown
+                        'posts_per_page' => 6,
+
+                        );
+
+                        $cssCounter = 1;
+
+
+                       $the_query = new WP_Query( $args ); ?>
+
+                        <?php if ( $the_query->have_posts() ) : ?>
+                        <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+
+                        <div class="related-toolkits-column related-item-<?php echo $cssCounter ?> col-md-6 col-sm-6 col-xs-12">
+
+                          <div class="related-toolkit-image col-md-4 col-sm-4 col-xs-6">
+                            <div class="related-image-box">
+                              <a href="
+                              <?php echo the_permalink() ?>" class="toolkit-list-image">
+                              <?php echo get_the_post_thumbnail(get_the_ID(), 'medium'); ?>
+                              </a>
+                            </div>
+                          </div>
+
+                          <div class="related-toolkit-meta col-md-8 col-sm-8 col-xs-6">
+                            <h5><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h5>
+                              <?php
+                              $publishers = get_field('publisher');
+                              if( $publishers ): ?>
+                                <?php foreach( $publishers as $publisher ): ?>
+                                  <h4>
+                                  <?php echo $publisher->name; ?>
+                                </h4>
+                                <?php endforeach; ?>
+                              <?php endif; ?>
+                            <p><?php the_field('description'); ?></p>
+                          </div>
+                        </div> <!-- result item -->
+
+
+                        <?php
+                        $cssCounter++;
+                        endwhile; ?>
+                        <!-- end of the loop -->
+
+
+                        <!-- pagination here -->
+
+                        <?php wp_reset_postdata(); ?>
+
+                        <?php else : ?>
+                        <p>We're working on adding more toolkits in this discipline or practice.</p>
+                        <?php endif; ?>
+
+
+
+
+                <h4 class="view-all-link"><a href="/search-toolkits/?_sft_discipline-or-practice=<?php echo $disciplineHyphenated ?>">View all toolkits related to <?php echo $disciplineUpper ?></a></h4>
+
+
+
+
+
               </section>
 
             </section>
