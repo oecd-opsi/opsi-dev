@@ -2510,6 +2510,9 @@ h2.view-all-link {
   padding-top: 1em;
 }
 
+#browse-options #explore-box {
+  padding-left: .1em;
+}
 
 .toolkit-guide #guide-main-content h2 {
   padding-right: 0
