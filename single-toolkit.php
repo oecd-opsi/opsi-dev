@@ -239,7 +239,19 @@
           $disciplineSlug = $termID->slug;
 
 
-?>
+
+          $disciplines = get_field('discipline-or-practice');
+          if( $disciplines ):
+           foreach( $disciplines as $discipline ):
+
+            $disciplineSlug = $discipline->name;
+
+
+            endforeach;
+        endif; ?>
+
+
+
 <p> <?php echo $disciplineSlug ?>    </p>
 <?php
 
@@ -251,7 +263,7 @@
              	array(
              		'taxonomy' => 'discipline-or-practice',
              		'field'    => 'slug',
-             		'terms'    => 'strategic-design' // current discipline or practice
+             		'terms'    => $disciplineSlug // current discipline or practice
              	)
             ),
             'post__not_in' => array($currentID), // removes the current page from being shown
