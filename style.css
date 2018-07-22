@@ -2011,8 +2011,12 @@ Search results styling
 
 }
 
+#filters-section .searchandfilter label {
+  width: 100%;
+}
+
 #filters-section .sf-field-search input {
-  width: 22em;
+  width: 100%;
 }
 
 #filters-section .chosen-container-multi .chosen-choices {
