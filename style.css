@@ -1971,6 +1971,11 @@ section#all-comments {
   clear: left;
 }
 
+
+.related-image-box {
+  width: auto;
+}
+
 .sample-image-box {
   background-color: #ddd;
   height: 150px;

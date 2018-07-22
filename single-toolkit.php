@@ -283,7 +283,7 @@
             <div class="related-toolkits-column related-item-<?php echo $cssCounter ?> col-md-6 col-sm-6 col-xs-12">
 
               <div class="related-toolkit-image col-md-4 col-sm-4 col-xs-6">
-                <div class="sample-image-box">
+                <div class="related-image-box">
                   <a href="
                   <?php echo the_permalink() ?>" class="toolkit-list-image">
                   <?php echo get_the_post_thumbnail(get_the_ID(), 'medium'); ?>
