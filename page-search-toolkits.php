@@ -15,7 +15,7 @@
                   <!-- Display featured image in right-aligned floating div -->
 
               <h1 class="entry-title"><?php the_title(); ?></h1>
-              <p class="search-explainer">Check out this <a href="https://www.oecd-opsi.org/toolkit-taxonomy/">blog post</a> for more information about how we've organized these toolkits.</p>
+              <p class="search-explainer">Check out <a href="https://www.oecd-opsi.org/toolkit-taxonomy/">this blog post</a> for more information about how we've organized toolkits into types and disciplines.</p>
 
               <div class="entry-content"><?php // the_content(); ?></div>
 

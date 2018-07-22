@@ -2004,7 +2004,7 @@ Search results styling
 
 p.search-explainer {
   font-size: 1em
-  
+
 }
 
 #filters-section {
@@ -2025,7 +2025,7 @@ p.search-explainer {
 }
 
 #filters-section .chosen-container-multi .chosen-choices {
-  width: 22em;
+  width: 100%;
 }
 
 #filters-section a.search-filter-reset {
