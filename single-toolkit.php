@@ -6,7 +6,7 @@
   ?>
 
 
-  <div class="col-sm-12">
+  <div id="toolkit-container" class="col-sm-12">
 
   <?php while ( have_posts() ) : the_post(); $postid = get_the_ID();
 

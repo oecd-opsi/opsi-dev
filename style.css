@@ -2496,7 +2496,7 @@ h2.view-all-link {
 
 
 /* FOR MOBILE SCREENS, TOOLKIT SPECIFIC */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1100px) {
 
 #guide-header #skip-for-mobile {
   display: block;
@@ -2512,6 +2512,13 @@ h2.view-all-link {
 
 .toolkit-guide #guide-main-content h2 {
   padding-right: 1em;
+}
+
+#toolkit-container {
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 
