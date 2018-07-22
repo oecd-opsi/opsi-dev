@@ -225,19 +225,12 @@
   </section>
 
   <section id="similar-resources-section" class="toolkit-section col-md-12 col-sm-12 col-xs-12">
-    <h2>Other toolkits related to Strategic Design</h2>
 
     <?php
-
-    // end of filters
-
-
-            // the query
           $currentID = get_the_ID();
 
           $termID = get_term($taxonomy = 'discipline-or-practice');
           $disciplineSlug = $termID->slug;
-
 
 
           $disciplines = get_field('discipline-or-practice');
@@ -250,9 +243,9 @@
             endforeach;
         endif; ?>
 
+        <h2>Other toolkits related to <?php echo $disciplineSlug ?></h2>
 
 
-<p> <?php echo $disciplineSlug ?>    </p>
 <?php
 
 
@@ -347,7 +340,7 @@
 
 
   </section>
-  <h4><a href="#">View all toolkits related to strategic design</a></h4>
+  <h4><a href="#">View all toolkits related to <?php echo $disciplineSlug ?></a></h4>
 
 
   <section id="all-comments" class="toolkit-section">
