@@ -66,7 +66,7 @@
 
 
 
-                    <h2><?php echo $disciplineUpper ?> toolkits</h2>
+                    <h2 id="guide-related-header"><?php echo $disciplineUpper ?> toolkits</h2>
 
 
             <?php
@@ -132,7 +132,7 @@
 
 
 
-                <h4 class="view-all-link"><a href="/search-toolkits/?_sft_discipline-or-practice=<?php echo $disciplineHyphenated ?>">View all toolkits for <?php echo $disciplineUpper ?></a></h4>
+                <h2 class="view-all-link"><a href="/search-toolkits/?_sft_discipline-or-practice=<?php echo $disciplineHyphenated ?>">View all toolkits for <?php echo $disciplineUpper ?></a></h2>
 
 
 
@@ -145,7 +145,6 @@
 
 
 
-            <hr id="browse-section-rule">
 
             <section id="another-section" class="browse-page-content category-row wpb_column vc_column_container col-md-12 vc_col-sm-12">
 
