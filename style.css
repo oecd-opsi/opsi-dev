@@ -1948,6 +1948,12 @@ div.translate select::-ms-expand {
   padding-bottom: 2em;
 }
 
+.toolkit-section .related-item-1,
+.toolkit-section .related-item-3,
+.toolkit-section .related-item-5 {
+  clear: left;
+}
+
 .toolkit-section .related-toolkits-column h4 {
   font-size: 1em;
 }
