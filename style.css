@@ -2072,8 +2072,13 @@ p.search-explainer {
   font-size: 2.3em;
   padding-bottom: 0;
   color: #fff;
+  margin-left: 16px;
 }
 
+#search-page-intro .search-explainer a,
+#search-page-intro .search-explainer a:hover {
+  color: #337ab7;
+}
 
 
 
@@ -2260,6 +2265,7 @@ p.search-explainer {
   margin-top: 0px;
   margin-bottom: 1em;
   padding-top: 1em;
+  margin-right: 2em;
 }
 
 #search-section .search-field ul li {
@@ -2273,8 +2279,8 @@ p.search-explainer {
 }
 
 #search-section .search-field input.sf-input-text {
-  width: 100%;
-  max-width: 460px;
+  width: 900%;
+  max-width: 420px;
   padding: 0;
   margin: 0;
   margin-bottom: 8px;
