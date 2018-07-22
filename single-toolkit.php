@@ -226,70 +226,15 @@
   <section id="similar-resources-section" class="toolkit-section col-md-12 col-sm-12 col-xs-12">
     <h2>Similar resources</h2>
 
-    <?php
+    <?php $catquery = new WP_Query( 'cat=2&posts_per_page=5' ); ?>
+    <ul>
 
-    // end of filters
+    <?php while($catquery->have_posts()) : $catquery->the_post(); ?>
 
-
-
-
-            // the query
-
-          $args = '_sft_discipline-or-practice=strategic-design';
-            $args['search_filter_id'] = 1414;
-
-
-            $the_query = new WP_Query( $args ); ?>
-
-
-
-            <?php if ( $the_query->have_posts() ) : ?>
-
-              <div id="search-filter-results-1414" class="results-section col-md-8 col-sm-8 col-xs-12">
-
-
-            <!-- pagination here -->
-
-            <!-- the loop -->
-            <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
-
-
-            <div class="result-item">
-            <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-
-    <!-- current image handling -->
-    <div class="results-image col-md-3 col-sm-3 col-xs-12">
-      <div class="toolkit-image <?php echo (!has_post_thumbnail() ? 'noimg' : ''); ?>">
-        <a href="
-        <?php echo the_permalink() ?>" class="toolkit-list-image">
-        <?php echo get_the_post_thumbnail(get_the_ID(), 'medium'); ?>
-        </a>
-
-      </div>
-    </div>
-    <!-- end current image handling -->
-
-    <div class="results-content col-md-9 col-sm-9 col-xs-12">
-    <p class="toolkit-description">
-      <?php the_field('description'); ?>
-    </p>
-
-
-
-    </div>
-    </div> <!-- result item -->
-
-
-            <?php endwhile; ?>
-            <!-- end of the loop -->
-
-            <!-- pagination here -->
-
-            <?php wp_reset_postdata(); ?>
-
-            <?php else : ?>
-            <p><?php esc_html_e( 'Sorry, no posts matched your criteria.' ); ?></p>
-            <?php endif; ?>
+    <li><a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></li>
+    <?php endwhile;
+        wp_reset_postdata();
+    ?>  
 
 
 
