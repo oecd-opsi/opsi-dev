@@ -49,7 +49,7 @@
                 <?php
                       $currentID = get_the_ID();
 
-                      $disciplines = get_field('discipline-or-practice');
+                      $disciplines = get_field('guide_discipline_or_practice');
                       if( $disciplines ):
                        foreach( array_reverse($disciplines) as $discipline ):
 
