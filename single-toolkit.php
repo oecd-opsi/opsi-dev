@@ -236,19 +236,44 @@
             // the query
            $args = array('post_type' => 'post');
 
-          // $args = array(
-          //     'related-posts' => array(
-          //       array(
-          //         'taxonomy' => 'discipline-or-practice',
-          //         'field' => 'slug',
-          //         'terms' => 'strategic-design'
-          //       )
-          //     )
-          //   );
+          $args = array(
+              'related-posts' => array(
+                array(
+                  'taxonomy' => 'discipline-or-practice',
+                  'field' => 'slug',
+                  'terms' => 'strategic-design'
+                )
+              )
+            );
             $args['search_filter_id'] = 1414;
 
 
             $the_query = new WP_Query( $args ); ?>
+
+            <?php
+// test filtering method
+            function filter_function_name( $query_args, $sfid ) {
+
+           	//if search form ID = 1414, the do something with this query
+           	if($sfid==1414)
+           	{
+           		//modify $query_args here before returning it
+           		$query_args = array(
+                  'related-posts' => array(
+                    array(
+                      'taxonomy' => 'discipline-or-practice',
+                      'field' => 'slug',
+                      'terms' => 'strategic-design'
+                    )
+                  )
+                );
+           	}
+
+           	return $query_args;
+           }
+           add_filter( 'sf_edit_query_args', 'filter_function_name', 20, 2 );
+//end of test
+             ?>
 
             <?php if ( $the_query->have_posts() ) : ?>
 
