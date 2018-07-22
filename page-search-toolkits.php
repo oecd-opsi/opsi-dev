@@ -40,9 +40,8 @@ echo do_shortcode('[searchandfilter id="1414"]');
 
         // the query
         $args = array(
-          'post_type' => 'post',
-          'posts_per_page' => 10
-        );
+          'post_type' => 'post'
+                );
         $args['search_filter_id'] = 1414;
 
 
@@ -140,8 +139,8 @@ if( $features ): ?>
         <!-- end of the loop -->
 
 <?php
-        do_action('search_filter_setup_pagination', 1414);
-        wpbeginner_numeric_posts_nav();
+  //      do_action('search_filter_setup_pagination', 1414);
+  //      wpbeginner_numeric_posts_nav();
   ?>
 
         <!-- pagination here -->
