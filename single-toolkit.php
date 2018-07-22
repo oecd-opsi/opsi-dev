@@ -244,6 +244,8 @@
 
 
         $disciplineUpper = ucwords($disciplineSlug);
+        $disciplineLower = strtolower($disciplineSlug);
+        $disciplineHyphenated = str_replace(' ', '-', $disciplineLower);
 
         ?>
 
@@ -346,7 +348,9 @@
 
 
   </section>
-  <h4><a href="#">View all toolkits related to <?php echo $disciplineUpper ?></a></h4>
+  <h4><a href="/search-toolkits/?_sft_discipline-or-practice=<?php echo $disciplineHyphenated ?>">View all toolkits related to <?php echo $disciplineUpper ?></a></h4>
+
+
 
 
   <section id="all-comments" class="toolkit-section">
