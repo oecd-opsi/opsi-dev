@@ -2288,6 +2288,11 @@ p.search-explainer {
 
 }
 
+#browse-options p.spacer {
+  font-size: 1em;
+  margin: 0;
+  padding: 0;
+}
 
 #browse-options .topic-column {
   display: block;
