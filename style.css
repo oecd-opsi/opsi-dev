@@ -2479,7 +2479,11 @@ h2.view-all-link {
 #guide-main-content p a,
 #guide-main-content p a:hover {
   color: #337ab7;
+}
 
+#guide-header #skip-for-mobile p a,
+#guide-header #skip-for-mobile p a:hover {
+  color: #337ab7;
 }
 
 #guide-header #skip-for-mobile {
@@ -2487,6 +2491,7 @@ h2.view-all-link {
   line-height: 1.3em;
   font-size: 1em;
   padding-bottom: 0px;
+  display: none;
 }
 
 
