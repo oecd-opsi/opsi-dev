@@ -2548,6 +2548,10 @@ h2.view-all-link {
 
 }
 
+.results-section .result-item h2 {
+  padding-bottom: 0em;
+}
+
 .results-section .result-item .results-image {
   margin: 0 0 0 0;
   padding: 0 0 12px 0;
@@ -2556,6 +2560,11 @@ h2.view-all-link {
 .results-section .result-item .results-content {
   margin: 0 0 0 0;
   padding: 0 0 0 0;
+}
+
+.results-section .result-item .results-content .toolkit-description {
+  font-size: 1.2em;
+  line-height: 1.4em;
 }
 
 .results-section .result-item h2 a {
