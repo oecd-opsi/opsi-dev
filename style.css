@@ -1982,6 +1982,11 @@ section#all-comments {
   width: auto;
 }
 
+h4.view-all-link {
+  display: block;
+  clear: left;
+}
+
 h4.view-all-link a,
 h4.view-all-link a:hover {
   color: #337ab7;

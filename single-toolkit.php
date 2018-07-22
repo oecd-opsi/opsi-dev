@@ -323,36 +323,11 @@
 
 
 
-    <!-- <div class="row">
-      <div class="related-toolkits-column col-md-6 col-sm-6 col-xs-12">
-        <div class="related-toolkit-image col-md-4 col-sm-4 col-xs-6">
-          <div class="sample-image-box">&nbsp;</div>
-        </div>
-        <div class="related-toolkit-meta col-md-8 col-sm-8 col-xs-6">
-          <h5><a href="#">BETA Guide to developing behavioural interventions for randomised controlled trials</a></h5>
-          <h4>Australian Government Department of the Prime Minister and Cabinet</h4>
-          <p>
-            BETA’s approach to developing behavioural interventions for randomised controlled trials (RCTs). It pulls together behavioural and RCT expertise from around the world, in an easy to use guide for those looking to develop behavioural interventions for RCTs in government.
-          </p>
-        </div>
-      </div>
-      <div class="related-toolkits-column col-md-6 col-sm-6 col-xs-12">
-        <div class="related-toolkit-image col-md-4 col-sm-4 col-xs-12">
-          <div class="sample-image-box">&nbsp;</div>
-        </div>
-        <div class="related-toolkit-meta col-md-8 col-sm-8 col-xs-12">
-          <h5><a href="#">EAST: Four Simple Ways to Apply Behavioural Insights</a></h5>
-          <h4>UK Behavioral Insights Team</h4>
-          <p>
-            If you want to encourage a behaviour, make it Easy, Attractive, Social and Timely (EAST). These four simple principles, based on the Behavioural Insights Team’s own work and the wider academic literature, form the heart of the new framework for applying behavioural insights.
-          </p>
-        </div>
-      </div>
-    </div> -->
+
+    <h4 class="view-all-link"><a href="/search-toolkits/?_sft_discipline-or-practice=<?php echo $disciplineHyphenated ?>">View all toolkits related to <?php echo $disciplineUpper ?></a></h4>
 
 
   </section>
-  <h4 class="view-all-link"><a href="/search-toolkits/?_sft_discipline-or-practice=<?php echo $disciplineHyphenated ?>">View all toolkits related to <?php echo $disciplineUpper ?></a></h4>
 
 
 
