@@ -239,11 +239,17 @@
 
             $disciplineSlug = $discipline->name;
 
-
             endforeach;
-        endif; ?>
+        endif;
 
-        <h2>Other toolkits related to <?php echo $disciplineSlug ?></h2>
+
+        $disciplineUpper = ucwords($disciplineSlug);
+
+        ?>
+
+
+
+        <h2>Other toolkits related to <?php echo $disciplineUpper ?></h2>
 
 
 <?php
@@ -340,7 +346,7 @@
 
 
   </section>
-  <h4><a href="#">View all toolkits related to <?php echo $disciplineSlug ?></a></h4>
+  <h4><a href="#">View all toolkits related to <?php echo $disciplineUpper ?></a></h4>
 
 
   <section id="all-comments" class="toolkit-section">
