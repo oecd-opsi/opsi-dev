@@ -235,47 +235,31 @@
 
             // the query
            $args = array('post_type' => 'post');
-
-
-            $args['search_filter_id'] = 1414;
-
-
-            $the_query = new WP_Query( 'discipline-or-practice=strategic-design' ); ?>
-
-
+           $args['search_filter_id'] = 1414;
+           $the_query = new WP_Query( 'discipline-or-practice=strategic-design' ); ?>
 
             <?php if ( $the_query->have_posts() ) : ?>
-
-              <div id="search-filter-results-1414" class="results-section col-md-8 col-sm-8 col-xs-12">
-
-
-            <!-- pagination here -->
-
-            <!-- the loop -->
             <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
-
 
             <div class="result-item">
             <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 
-    <!-- current image handling -->
-    <div class="results-image col-md-3 col-sm-3 col-xs-12">
-      <div class="toolkit-image <?php echo (!has_post_thumbnail() ? 'noimg' : ''); ?>">
-        <a href="
-        <?php echo the_permalink() ?>" class="toolkit-list-image">
-        <?php echo get_the_post_thumbnail(get_the_ID(), 'medium'); ?>
-        </a>
+              <!-- current image handling -->
+              <div class="results-image col-md-3 col-sm-3 col-xs-12">
+                <div class="toolkit-image <?php echo (!has_post_thumbnail() ? 'noimg' : ''); ?>">
+                  <a href="
+                  <?php echo the_permalink() ?>" class="toolkit-list-image">
+                  <?php echo get_the_post_thumbnail(get_the_ID(), 'medium'); ?>
+                  </a>
 
-      </div>
-    </div>
-    <!-- end current image handling -->
+                </div>
+              </div>
+              <!-- end current image handling -->
 
-    <div class="results-content col-md-9 col-sm-9 col-xs-12">
-    <p class="toolkit-description">
-      <?php the_field('description'); ?>
-    </p>
-
-
+              <div class="results-content col-md-9 col-sm-9 col-xs-12">
+              <p class="toolkit-description">
+                <?php the_field('description'); ?>
+              </p>
 
     </div>
     </div> <!-- result item -->
@@ -289,7 +273,7 @@
             <?php wp_reset_postdata(); ?>
 
             <?php else : ?>
-            <p><?php esc_html_e( 'Sorry, no posts matched your criteria.' ); ?></p>
+            <p>We're working on adding more toolkits in this discipline or practice.</p>
             <?php endif; ?>
 
 
