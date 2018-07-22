@@ -235,7 +235,7 @@
             // the query
           $currentID = get_the_ID();
 
-          $termID = get_term( $id, 'discipline-or-practice' );
+          $termID = get_term('discipline-or-practice');
           $disciplineSlug = $termID->slug;
 
 
