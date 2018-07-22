@@ -166,7 +166,7 @@
               </div>
 
               <div id="search-section">
-
+                <p>&nbsp;</p>
                 <h2 id="search-header" class="category-header links-header">Search keywords</h2>
 
                 <div id="search-field-box" class="category-row wpb_column vc_column_container vc_col-sm-12">
