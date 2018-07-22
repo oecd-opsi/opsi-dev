@@ -140,7 +140,7 @@
                   <a property="item" typeof="WebPage" title="Go to Observatory of Public Sector Innovation." href="/" class="home"><span property="name"><i class="fa fa-home"></i></span></a><meta property="position" content="1">
                 </span> &gt;
                 <span property="itemListElement" typeof="ListItem"><span property="name">
-                  <a property="item" typeof="WebPage" title="All toolkits" href="/browse-toolkits/" class="home">Toolkits</a><meta property="position" content="1">
+                  <a property="item" typeof="WebPage" title="All toolkits" href="/toolkit-navigator/" class="home">Toolkits</a><meta property="position" content="1">
                 </span><meta property="position" content="2"></span>
                 &gt;
                 <span property="itemListElement" typeof="ListItem"><span property="name">
