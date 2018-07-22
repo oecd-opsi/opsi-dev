@@ -236,7 +236,7 @@
             // the query
 
            $args = array(
-             'post_type'   => 'toolkits',
+             'post_type'   => 'toolkit',
              'post_status' => 'publish',
              'tax_query'   => array(
              	array(
