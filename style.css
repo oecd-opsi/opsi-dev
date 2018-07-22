@@ -2002,6 +2002,11 @@ Search results styling
 /////////////
 */
 
+p.search-explainer {
+  font-size: 1em
+  
+}
+
 #filters-section {
   background-color: #f7fbfe;
   border: 1px solid #dbe7ef;
