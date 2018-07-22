@@ -286,7 +286,9 @@
 
             <?php endwhile; ?>
             <!-- end of the loop -->
-
+            <?php
+            do_action('search_filter_setup_pagination', 1414);
+            ?>
             <!-- pagination here -->
 
             <?php wp_reset_postdata(); ?>
