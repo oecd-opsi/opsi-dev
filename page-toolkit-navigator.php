@@ -168,14 +168,16 @@
               <div id="search-section">
 
                 <h2 id="search-header" class="category-header links-header">Search keywords</h2>
-                <p class="search-help-text">Helper text here</p>
 
-                <div class="search-field">
-                  &nbsp;
-                  <?php
-                    echo do_shortcode('[searchandfilter id="1902"]');
-                  ?>
-                </div>
+                <div id="search-field-box" class="category-row wpb_column vc_column_container vc_col-sm-12">
+
+                  <p class="search-help-text">Helper text here</p>
+                  <div class="search-field">
+                    &nbsp;
+                    <?php
+                      echo do_shortcode('[searchandfilter id="1902"]');
+                    ?>
+                  </div>
 
               </div>
 
