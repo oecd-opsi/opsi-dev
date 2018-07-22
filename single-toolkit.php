@@ -229,6 +229,8 @@
     <?php
           $currentID = get_the_ID();
 
+          $termID = get_term($taxonomy = 'discipline-or-practice');
+          $disciplineSlug = $termID->slug;
 
 
           $disciplines = get_field('discipline-or-practice');
