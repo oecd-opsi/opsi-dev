@@ -17,9 +17,9 @@
   ?>
 
   <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+    <p id="skip-for-mobile"><a href="/toolkit-navigator/">Toolkit Navigator</a></p>
 
     <section id="top-section" class="toolkit-section">
-      <p id="skip-for-mobile"><a href="/toolkit-navigator/">Toolkit Navigator</a></p>
 
       <div id="image-section" class="col-md-4 col-sm-4 col-xs-12">
         <div class="toolkit-image <?php echo (!has_post_thumbnail() ? 'noimg' : ''); ?>">

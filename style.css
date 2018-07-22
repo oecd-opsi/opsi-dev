@@ -2234,6 +2234,7 @@ p.search-explainer a:hover {
 #intro-section p a,
 #more-info-section p a {
   color: #337ab7;
+  overflow-wrap: break-word;
 }
 
 #intro-section p a:hover,
