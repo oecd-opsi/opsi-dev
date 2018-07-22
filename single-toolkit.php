@@ -280,7 +280,7 @@
             <?php if ( $the_query->have_posts() ) : ?>
             <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 
-            <div class="related-toolkits-column related-item-<?php $cssCounter ?> col-md-6 col-sm-6 col-xs-12">
+            <div class="related-toolkits-column related-item-<?php echo $cssCounter ?> col-md-6 col-sm-6 col-xs-12">
 
               <div class="related-toolkit-image col-md-4 col-sm-4 col-xs-6">
                 <div class="sample-image-box">
