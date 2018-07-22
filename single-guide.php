@@ -66,7 +66,7 @@
 
 
 
-                    <h2>Toolkits for being <?php echo $disciplineSlug ?></h2>
+                    <h2><?php echo $disciplineUpper ?> toolkits</h2>
 
 
             <?php
@@ -86,7 +86,6 @@
 
                         );
 
-                        $cssCounter = 1;
 
 
                        $the_query = new WP_Query( $args ); ?>
@@ -94,18 +93,15 @@
                         <?php if ( $the_query->have_posts() ) : ?>
                         <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 
-                        <div class="related-toolkits-column related-item-<?php echo $cssCounter ?> col-md-6 col-sm-6 col-xs-12">
+                        <div class="related-toolkits-column col-md-12 col-sm-12 col-xs-12">
 
-                          <div class="related-toolkit-image col-md-4 col-sm-4 col-xs-6">
-                            <div class="related-image-box">
+                            <div class="guide-sidebar-image-box">
                               <a href="
                               <?php echo the_permalink() ?>" class="toolkit-list-image">
                               <?php echo get_the_post_thumbnail(get_the_ID(), 'medium'); ?>
                               </a>
                             </div>
-                          </div>
 
-                          <div class="related-toolkit-meta col-md-8 col-sm-8 col-xs-6">
                             <h5><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h5>
                               <?php
                               $publishers = get_field('publisher');
@@ -117,12 +113,10 @@
                                 <?php endforeach; ?>
                               <?php endif; ?>
                             <p><?php the_field('description'); ?></p>
-                          </div>
                         </div> <!-- result item -->
 
 
                         <?php
-                        $cssCounter++;
                         endwhile; ?>
                         <!-- end of the loop -->
 
