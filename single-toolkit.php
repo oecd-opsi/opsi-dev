@@ -235,7 +235,7 @@
 
             // the query
 
-          $args = '?_sft_discipline-or-practice=strategic-design';
+          $args = '_sft_discipline-or-practice=strategic-design';
             $args['search_filter_id'] = 1414;
 
 
