@@ -2365,3 +2365,13 @@ GUIDE PAGES
   padding: 1.5em 1.5em 1em 1.5em;
   margin-bottom: 1em;
 }
+
+.guide-sidebar-image-box {
+  padding: 0 0 .5em 0
+}
+
+.guides-related-item {
+  border: 1px solid #dbe7ef;
+  border-radius: 5px;
+  padding: 24px;
+}
