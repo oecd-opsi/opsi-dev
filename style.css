@@ -2487,7 +2487,8 @@ h2.view-all-link {
   color: #337ab7;
 }
 
-#guide-header #skip-for-mobile {
+#guide-header #skip-for-mobile,
+#article #show-for-mobile {
   max-width: 600px;
   line-height: 1.3em;
   font-size: 1em;
@@ -2499,9 +2500,16 @@ h2.view-all-link {
 /* FOR MOBILE SCREENS, TOOLKIT SPECIFIC */
 @media only screen and (max-width: 1100px) {
 
-#guide-header #skip-for-mobile {
+
+#guide-header #skip-for-mobile,
+#article #show-for-mobile {
   display: block;
 }
+
+#top-section {
+  padding-top: 1em;
+}
+
 
 .toolkit-guide #guide-main-content h2 {
   padding-right: 0

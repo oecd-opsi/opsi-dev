@@ -17,7 +17,7 @@
   ?>
 
   <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-    <p id="skip-for-mobile"><a href="/toolkit-navigator/">Toolkit Navigator</a></p>
+    <p id="show-for-mobile"><a href="/toolkit-navigator/">Toolkit Navigator</a></p>
 
     <section id="top-section" class="toolkit-section">
 
