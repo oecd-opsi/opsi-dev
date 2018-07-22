@@ -238,6 +238,8 @@
            $args = array(
              'post_type'   => 'toolkit',
              'post_status' => 'publish',
+             'posts_per_page' => 4,
+             'nopaging' => true,
              'tax_query'   => array(
              	array(
              		'taxonomy' => 'discipline-or-practice',
