@@ -2007,10 +2007,11 @@ Search results styling
 #filters-section {
   background-color: #f7fbfe;
   border: 1px solid #dbe7ef;
-  border-left: none;
+  /* border-left: none; */
   border-radius: 5px;
   padding: 32px 32px 32px 12px;
-  margin-left: -16px;
+  /* margin-left: -16px; */
+  margin-bottom: 32px;
 
 }
 
@@ -2074,7 +2075,7 @@ Search results styling
 
 
 
-#search-page-intro p.search-explainer {
+p.search-explainer {
   max-width: 720px;
   line-height: 1em;
   font-size: 1em;
@@ -2082,8 +2083,8 @@ Search results styling
 }
 
 
-#search-page-intro p.search-explainer a,
-#search-page-intro p.search-explainer a:hover {
+p.search-explainer a,
+p.search-explainer a:hover {
   color: #337ab7;
 }
 
