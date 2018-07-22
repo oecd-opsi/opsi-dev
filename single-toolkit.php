@@ -234,7 +234,8 @@
 
 
             // the query
-           $the_query = new WP_Query( 'post_type=toolkits&discipline-or-practice=strategic-design' ); ?>
+           $args['search_filter_id'] = 1414;
+           $the_query = new WP_Query( 'post_type=toolkits&discipline-or-practice=strategic-design&posts_per_page=4' ); ?>
 
             <?php if ( $the_query->have_posts() ) : ?>
             <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
