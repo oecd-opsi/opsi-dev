@@ -352,7 +352,7 @@
 
 
   </section>
-  <h4><a href="/search-toolkits/?_sft_discipline-or-practice=<?php echo $disciplineHyphenated ?>">View all toolkits related to <?php echo $disciplineUpper ?></a></h4>
+  <h4 class="view-all-link"><a href="/search-toolkits/?_sft_discipline-or-practice=<?php echo $disciplineHyphenated ?>">View all toolkits related to <?php echo $disciplineUpper ?></a></h4>
 
 
 

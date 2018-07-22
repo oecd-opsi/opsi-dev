@@ -1945,7 +1945,7 @@ div.translate select::-ms-expand {
 }
 
 .toolkit-section .related-toolkits-column {
-  padding-bottom: 2em;
+  padding-bottom: 5em;
 }
 
 .toolkit-section .related-item-1,
@@ -1980,6 +1980,11 @@ section#all-comments {
   background-color: #ddd;
   height: 150px;
   width: auto;
+}
+
+h4.view-all-link a,
+h4.view-all-link a:hover {
+  color: #337ab7;
 }
 
 #all-comments {
