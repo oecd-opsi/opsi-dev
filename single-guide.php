@@ -13,9 +13,12 @@
   <?php while ( have_posts() ) : the_post(); $postid = get_the_ID(); ?>
           <article class="toolkit-guide" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
                   <!-- Display featured image in right-aligned floating div -->
+            <p id="show-for-mobile"><a href="/toolkit-navigator/">Toolkit Navigator</a></p>
 
 
             <section id="guide-header">
+
+              <p id="category"><a href="/toolkit-navigator/">Toolkit Navigator</a></p>
 
               <h1 class="guide-title"><?php the_title(); ?></h1>
               <p id="skip-for-mobile"><a href="#guide-related-header">Scroll to toolkits</a></p>
