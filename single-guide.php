@@ -57,7 +57,7 @@
 
 
 
-                    <h2>Toolkits for <?php echo $disciplineUpper ?></h2>
+                    <h2>Toolkits for <?php echo $disciplineID ?></h2>
 
 
             <?php
