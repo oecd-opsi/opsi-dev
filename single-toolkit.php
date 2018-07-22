@@ -239,7 +239,7 @@
            $args = array(
              'post_type'   => 'toolkit',
              'post_status' => 'publish',
-             'post__not_in' => array($currentID), // removes the current page from being shown
+//             'post__not_in' => array($currentID), // removes the current page from being shown
              'posts_per_page' => 4,
              'nopaging' => true,
              'tax_query'   => array(
