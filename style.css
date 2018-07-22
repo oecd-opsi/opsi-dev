@@ -2210,7 +2210,7 @@ p.search-explainer {
 
 
 #browse-options {
-  margin-bottom: 4em;
+  margin-bottom: 3em;
 }
 
 
@@ -2273,10 +2273,15 @@ p.search-explainer {
 }
 
 #search-section .search-field input.sf-input-text {
-  width: 400px;
-  max-width: 100%;
+  width: 100%;
+  max-width: 460px;
   padding: 0;
   margin: 0;
+  margin-bottom: 8px;
+}
+
+#search-section .searchandfilter label {
+  width: 100%;
 }
 
 #search-section .searchandfilter ul li,
@@ -2289,7 +2294,7 @@ p.search-explainer {
 }
 
 #browse-options p.spacer {
-  font-size: 1em;
+  font-size: .1em;
   margin: 0;
   padding: 0;
 }
