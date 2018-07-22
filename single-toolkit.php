@@ -239,7 +239,6 @@
            $args = array(
              'post_type'   => 'toolkit',
              'post_status' => 'publish',
-             'showposts' => 4,
              'nopaging' => true,
              'tax_query'   => array(
              	array(
@@ -249,6 +248,8 @@
              	)
             ),
             'post__not_in' => array($currentID), // removes the current page from being shown
+            'posts_per_page' => 4
+
 
             );
 
