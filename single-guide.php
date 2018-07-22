@@ -49,12 +49,9 @@
                 <?php
                       $currentID = get_the_ID();
 
-                      $disciplineSlug = the_field('guide_discipline_or_practice');
+                      $disciplineID = the_field('guide_discipline_or_practice');
 
 
-                    $disciplineUpper = ucwords($disciplineSlug);
-                    $disciplineLower = strtolower($disciplineSlug);
-                    $disciplineHyphenated = str_replace(' ', '-', $disciplineLower);
 
                     ?>
 
@@ -72,8 +69,7 @@
                          'tax_query'   => array(
                          	array(
                          		'taxonomy' => 'discipline-or-practice',
-                         		'field'    => 'slug',
-                         		'terms'    => $disciplineSlug // current discipline or practice
+                         		'tag_id'    => $disciplineID // current discipline or practice
                          	)
                         ),
                         'post__not_in' => array($currentID), // removes the current page from being shown
