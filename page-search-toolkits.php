@@ -83,7 +83,7 @@ echo do_shortcode('[searchandfilter id="1414"]');
 </p>
 
 
-<div class="row col-md-12 col-sm-12 col-xs-12">
+<div class="toolkit-results-meta-row row col-md-12 col-sm-12 col-xs-12">
 
 
   <div class="results-meta-column col-md-4 col-sm-4 col-xs-4">

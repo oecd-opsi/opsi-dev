@@ -2068,7 +2068,7 @@ p.search-explainer {
 }
 
 #search-page-intro h1.search-title {
-  font-size: 2.6em;
+  font-size: 2.3em;
   padding-bottom: 0;
   color: #fff;
 }
@@ -2141,6 +2141,15 @@ p.search-explainer {
 
 .results-section .result-item  h2 {
   padding-bottom: .4em;
+}
+
+.results-section p a,
+.results-section p a:hover {
+  color: #337ab7;
+}
+
+.results-section .toolkit-results-meta-row {
+  padding-right: 0;
 }
 
 
