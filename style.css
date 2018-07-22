@@ -2572,5 +2572,10 @@ h2.view-all-link {
   text-decoration: underline;
 }
 
+.sf-field-taxonomy-license,
+.sf-field-taxonomy-publisher {
+  display: none;
+}
+
 
 /* } end 600 media query */
