@@ -2386,3 +2386,8 @@ h2#guide-related-header {
   padding-top: 2em;
   padding-bottom: .5em;
 }
+
+h2.view-all-link {
+  font-size: 1.3em;
+  
+}
