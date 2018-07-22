@@ -2549,7 +2549,7 @@ h2.view-all-link {
 }
 
 .results-section .result-item h2 {
-  padding-bottom: 0em;
+  padding-bottom: .2em;
 }
 
 .results-section .result-item .results-image {
@@ -2572,8 +2572,8 @@ h2.view-all-link {
   text-decoration: underline;
 }
 
-.sf-field-taxonomy-license,
-.sf-field-taxonomy-publisher {
+#filters-section ul .sf-field-taxonomy-license,
+#filters-section ul .sf-field-taxonomy-publisher {
   display: none;
 }
 
