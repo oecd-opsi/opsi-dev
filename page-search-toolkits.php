@@ -119,7 +119,7 @@ if( $disciplines ): ?>
 
 
 
-<div class="results-meta-column col-md-4 col-sm-4 col-xs-4">
+<div class="results-meta-column col-md-4 col-sm-4 col-xs-4 final-column">
 <!-- Features  -->
 <p class="results-meta-heading">Features</p>
 <?php

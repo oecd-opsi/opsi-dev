@@ -2133,6 +2133,10 @@ p.search-explainer {
   padding-left: 0;
 }
 
+.results-content .final-column {
+  padding-right: 0;
+}
+
 .results-section .result-item {
   margin-bottom: 1.2em;
   overflow: auto;
