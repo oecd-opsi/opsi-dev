@@ -14,7 +14,7 @@
           <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
                   <!-- Display featured image in right-aligned floating div -->
 
-             <section id="search-section">
+             <section id="search-page-intro">
                <h1 class="search-title"><?php the_title(); ?></h1>
               </section>
 
