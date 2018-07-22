@@ -2168,7 +2168,7 @@ p.search-explainer {
 
 
 
-#search-section {
+#landing-header-section {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -2180,18 +2180,25 @@ p.search-explainer {
 }
 
 
-
-
-#search-section h1.landing-title {
+#landing-header-section h1.landing-title {
   font-size: 2.6em;
   padding-bottom: 0;
   color: #fff;
 }
 
-#search-section h4.landing-subtitle {
+#landing-header-section h4.landing-subtitle {
   font-style: italic;
   font-size: 1.5em;
   color: #fff;
+}
+
+#search-section {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  margin-top: 0px;
+  margin-bottom: 1em;
 }
 
 #search-section .search-field ul li {
