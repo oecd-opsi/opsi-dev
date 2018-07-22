@@ -2389,5 +2389,10 @@ h2#guide-related-header {
 
 h2.view-all-link {
   font-size: 1.3em;
-  
+}
+
+#guide-main-content p a,
+#guide-main-content p a:hover {
+  color: #337ab7;
+
 }
