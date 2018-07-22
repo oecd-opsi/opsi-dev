@@ -231,7 +231,7 @@
     // end of filters
 
 
-
+          $args['search_filter_id'] = 1414;
 
             // the query
           $currentID = get_the_ID();
