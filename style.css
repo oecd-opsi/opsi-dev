@@ -2195,34 +2195,7 @@ p.search-explainer {
   margin-right: auto;
 }
 
-#search-section {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: left;
-  margin-top: 0px;
-  margin-bottom: 1em;
-  padding-top: 1em;
-}
 
-#search-section .search-field ul li {
-  display: inline;
-}
-
-
-#search-section .search-field {
-  padding: 0;
-  margin: 0;
-}
-
-#search-section .search-field input.sf-input-text {
-  width: 400px;
-  max-width: 100%;
-}
-
-#search-section #search-header {
-
-}
 
 #intro-section p a,
 #more-info-section p a {
@@ -2274,7 +2247,47 @@ p.search-explainer {
 
 #browse-options #search-field-box {
   display: block;
+  padding-top: 0;
+  padding-bottom: 1.5em;
+
 }
+
+#search-section {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  margin-top: 0px;
+  margin-bottom: 1em;
+  padding-top: 1em;
+}
+
+#search-section .search-field ul li {
+  display: inline;
+}
+
+
+#search-section .search-field {
+  padding: 0;
+  margin: 0;
+}
+
+#search-section .search-field input.sf-input-text {
+  width: 400px;
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+#search-section .searchandfilter ul li,
+.searchandfilter ul li ul li {
+  padding-left: 0;
+}
+
+#search-section #search-header {
+
+}
+
 
 #browse-options .topic-column {
   display: block;
