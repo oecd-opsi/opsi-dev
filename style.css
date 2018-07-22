@@ -2521,5 +2521,22 @@ h2.view-all-link {
   margin-right: 0;
 }
 
+#search-filter-results-1414,
+.results-section {
+  padding: 0;
+}
+
+#similar-resources-section {
+  padding: 0;
+}
+
+.related-toolkit-meta {
+  padding: 0;
+}
+
+.related-image-box {
+  padding: 0;
+}
+
 
 /* } end 600 media query */
