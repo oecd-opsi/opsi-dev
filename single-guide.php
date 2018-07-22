@@ -18,6 +18,7 @@
             <section id="guide-header">
 
               <h1 class="guide-title"><?php the_title(); ?></h1>
+              <p id="skip-for-mobile"><a href="#guide-related-header">Scroll to toolkits</a></p>
 
             </section>
 
