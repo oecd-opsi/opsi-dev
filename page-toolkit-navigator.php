@@ -171,7 +171,6 @@
 
                 <div id="search-field-box" class="category-row wpb_column vc_column_container vc_col-sm-12">
 
-                  <p class="search-help-text">Helper text here</p>
                   <div class="search-field">
                     &nbsp;
                     <?php
