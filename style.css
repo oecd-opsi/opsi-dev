@@ -2350,3 +2350,15 @@ GUIDE PAGES
 .toolkit-guide #guide-main-content ul {
   margin-bottom: 1.8em;
 }
+
+#guide-sidebar {
+  margin: 0;
+}
+
+#referral-section {
+  margin: 0;
+}
+
+#referral-section .referral-box {
+  padding: 1.5em 1.5em 1em 1.5em;
+}
