@@ -231,7 +231,7 @@
     // end of filters
 
 
-
+          $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
             // the query
           $currentID = get_the_ID();
 
@@ -246,10 +246,11 @@
              	)
             ),
             'post__not_in' => array($currentID), // removes the current page from being shown
-            'posts_per_page' => 4
-
+            'posts_per_page' => 4,
+            'paged' => $paged
 
             );
+
 
            $the_query = new WP_Query( $args ); ?>
 
