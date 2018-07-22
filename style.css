@@ -2053,7 +2053,7 @@ p.search-explainer {
 }
 
 #filters-section .chosen-container {
-  width: 100%;
+  width: 100% !important;
 }
 
 .searchandfilter ul li,
