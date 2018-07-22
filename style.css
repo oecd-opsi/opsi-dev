@@ -2013,6 +2013,7 @@ p.search-explainer {
   border-left: none;
   border-radius: 5px;
   padding: 32px 32px 32px 12px;
+  margin-left: -16px;
 
 }
 
@@ -2049,7 +2050,7 @@ p.search-explainer {
 
 #search-filter-results-1414,
 .results-section {
-  padding-left: 28px;
+  padding-left: 20px;
 }
 
 #filters-section .chosen-container {
