@@ -2515,8 +2515,14 @@ h2.view-all-link {
 }
 
 #browse-options .topic-column a {
-  padding-bottom: 1.3em; 
+  padding-bottom: 1.3em;
 }
+
+.toolkit-guide #guide-main-content,
+.toolkit-guide #guide-main-content p {
+  padding-right: 0; 
+}
+
 
 .toolkit-guide #guide-main-content h2 {
   padding-right: 0
