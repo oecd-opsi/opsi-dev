@@ -93,7 +93,7 @@
                         <?php if ( $the_query->have_posts() ) : ?>
                         <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 
-                        <div class="related-toolkits-item col-md-12 col-sm-12 col-xs-12">
+                        <div class="related-toolkits-item guides-related-item col-md-12 col-sm-12 col-xs-12">
 
                             <div class="guide-sidebar-image-box">
                               <a href="
