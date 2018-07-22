@@ -211,7 +211,7 @@
     <div class="row">
       <div class="meta-column col-md-6 col-sm-6 col-xs-12">
         <div id="cases-referral-block" class="referral-block">
-          <h5>See cases from others in the OECD network</h5>
+          <h5>See cases from others doing this in government</h5>
           <p><a href="/our-work/case-studies/">Go to case studies</a></p>
         </div>
       </div>
@@ -354,9 +354,14 @@
 
 
   <section id="all-comments" class="toolkit-section">
-    <h2>Feedback from the OECD network</h2>
+    <h2>Comments</h2>
 
-    <?php comments_template(); ?>
+    <?php
+
+    comments_template();
+
+
+    ?>
     <?php endwhile; ?>
   </section>
 

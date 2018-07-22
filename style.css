@@ -1944,6 +1944,11 @@ div.translate select::-ms-expand {
   border-radius: 5px;
 }
 
+.toolkit-section .related-toolkits-column {
+  padding-bottom: 2em;
+  clear: left;
+}
+
 .toolkit-section .related-toolkits-column h4 {
   font-size: 1em;
 }
@@ -1965,6 +1970,10 @@ section#all-comments {
   background-color: #ddd;
   height: 150px;
   width: auto;
+}
+
+#all-comments {
+  padding-top: 4em;
 }
 
 /*
