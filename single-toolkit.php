@@ -272,13 +272,15 @@
 
             );
 
+            $cssCounter = 1;
+
 
            $the_query = new WP_Query( $args ); ?>
 
             <?php if ( $the_query->have_posts() ) : ?>
             <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 
-            <div class="related-toolkits-column col-md-6 col-sm-6 col-xs-12">
+            <div class="related-toolkits-column related-item-<?php $cssCounter ?> col-md-6 col-sm-6 col-xs-12">
 
               <div class="related-toolkit-image col-md-4 col-sm-4 col-xs-6">
                 <div class="sample-image-box">
@@ -305,7 +307,9 @@
             </div> <!-- result item -->
 
 
-            <?php endwhile; ?>
+            <?php
+            $cssCounter++;
+            endwhile; ?>
             <!-- end of the loop -->
 
 
