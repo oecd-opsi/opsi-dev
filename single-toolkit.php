@@ -241,28 +241,31 @@
             <?php if ( $the_query->have_posts() ) : ?>
             <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 
-            <div class="result-item">
-            <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+            <div class="related-toolkits-column col-md-6 col-sm-6 col-xs-12">
 
-              <!-- current image handling -->
-              <div class="results-image col-md-3 col-sm-3 col-xs-12">
-                <div class="toolkit-image <?php echo (!has_post_thumbnail() ? 'noimg' : ''); ?>">
+              <div class="related-toolkit-image col-md-4 col-sm-4 col-xs-6">
+                <div class="sample-image-box">
                   <a href="
                   <?php echo the_permalink() ?>" class="toolkit-list-image">
                   <?php echo get_the_post_thumbnail(get_the_ID(), 'medium'); ?>
                   </a>
-
                 </div>
               </div>
-              <!-- end current image handling -->
 
-              <div class="results-content col-md-9 col-sm-9 col-xs-12">
-              <p class="toolkit-description">
-                <?php the_field('description'); ?>
-              </p>
-
-    </div>
-    </div> <!-- result item -->
+              <div class="related-toolkit-meta col-md-8 col-sm-8 col-xs-6">
+                <h5><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h5>
+                  <?php
+                  $publishers = get_field('publisher');
+                  if( $publishers ): ?>
+                    <?php foreach( $publishers as $publisher ): ?>
+                      <h4>
+                      <?php echo $publisher->name; ?>
+                    </h4>
+                    <?php endforeach; ?>
+                  <?php endif; ?>
+                <p><?php the_field('description'); ?></p>
+              </div>
+            </div> <!-- result item -->
 
 
             <?php endwhile; ?>
