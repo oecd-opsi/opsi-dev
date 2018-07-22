@@ -258,15 +258,7 @@
            	if($sfid==1414)
            	{
            		//modify $query_args here before returning it
-           		$query_args = array(
-                  'related-posts' => array(
-                    array(
-                      'taxonomy' => 'discipline-or-practice',
-                      'field' => 'slug',
-                      'terms' => 'strategic-design'
-                    )
-                  )
-                );
+           		$query_args = '?_sft_discipline-or-practice=strategic-design';
            	}
 
            	return $query_args;
