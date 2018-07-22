@@ -2056,6 +2056,26 @@ p.search-explainer {
   width: 100% !important;
 }
 
+#search-page-intro {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background: url(images/opsi-background-texture.jpg) no-repeat center center;
+  padding: 7em 1em 9em;
+  margin-top: 0px;
+  margin-bottom: 1em;
+}
+
+#search-page-intro h1.search-title {
+  font-size: 2.6em;
+  padding-bottom: 0;
+  color: #fff;
+}
+
+
+
+
 .searchandfilter ul li,
 .searchandfilter ul li ul li {
   padding: 2px;
@@ -2140,6 +2160,9 @@ p.search-explainer {
   margin-top: 0px;
   margin-bottom: 1em;
 }
+
+
+
 
 #search-section h1.landing-title {
   font-size: 2.6em;

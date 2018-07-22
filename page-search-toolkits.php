@@ -14,7 +14,10 @@
           <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
                   <!-- Display featured image in right-aligned floating div -->
 
-              <h1 class="entry-title"><?php the_title(); ?></h1>
+             <section id="search-section">
+               <h1 class="search-title"><?php the_title(); ?></h1>
+              </section>
+
               <p class="search-explainer">Check out <a href="https://www.oecd-opsi.org/toolkit-taxonomy/">this blog post</a> for more information about how we've organized toolkits into types and disciplines.</p>
 
               <div class="entry-content"><?php // the_content(); ?></div>
