@@ -2508,7 +2508,7 @@ h2.view-all-link {
 
 
 /* FOR MOBILE SCREENS, TOOLKIT SPECIFIC */
-@media only screen and (max-width: 844px) {
+@media only screen and (max-width: 767px) {
 
 
 #guide-header #skip-for-mobile,
