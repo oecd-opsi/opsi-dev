@@ -152,7 +152,10 @@ if( $features ): ?>
         <?php wp_reset_postdata(); ?>
 
         <?php else : ?>
-        <p id="no-results-message">No toolkits matched the filters and search criteria. <a href="/search-toolkits/">Reset filters</a></p>
+        <div id="no-results-message">
+          <h4>No toolkits matched the filters and search criteria.</h4>
+          <p><a href="/search-toolkits/">Click here to reset filters</a></p>
+        </div>
         <?php endif; ?>
 
 
