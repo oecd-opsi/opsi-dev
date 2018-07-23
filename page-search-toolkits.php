@@ -32,6 +32,9 @@
 
 
 echo do_shortcode('[searchandfilter id="1414"]');
+// note! this id is unique to the wordpress install.
+// beta version uses 1414
+// production version uses 1894
 ?>
 </div>
 
@@ -47,6 +50,9 @@ echo do_shortcode('[searchandfilter id="1414"]');
           'post_type' => 'post'
                 );
         $args['search_filter_id'] = 1414;
+        // note! this id is unique to the wordpress install.
+        // beta version uses 1414
+        // production version uses 1894
 
 
         $the_query = new WP_Query( $args ); ?>
@@ -54,7 +60,11 @@ echo do_shortcode('[searchandfilter id="1414"]');
         <?php if ( $the_query->have_posts() ) : ?>
 
           <div id="search-filter-results-1414" class="results-section col-md-8 col-sm-8 col-xs-12">
-
+            <!--
+            // note! this id is unique to the wordpress install.
+            // beta version uses 1414
+            // production version uses 1894
+            -->
 
         <!-- pagination here -->
 

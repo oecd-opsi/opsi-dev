@@ -175,6 +175,9 @@
                     &nbsp;
                     <?php
                       echo do_shortcode('[searchandfilter id="1902"]');
+                      // note! this id is unique to the wordpress install.
+                      // beta version uses 1902
+                      // production version uses 1895
                     ?>
                   </div>
 
