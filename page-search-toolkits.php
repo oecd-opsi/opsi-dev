@@ -152,7 +152,7 @@ if( $features ): ?>
         <?php wp_reset_postdata(); ?>
 
         <?php else : ?>
-        <p><?php esc_html_e( 'Sorry, no posts matched your criteria.' ); ?></p>
+        <p id="no-results-message">No toolkits matched the filters and search criteria. <a href="/search-toolkits/">Reset filters</a></p>
         <?php endif; ?>
 
 
