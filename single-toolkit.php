@@ -73,10 +73,14 @@
             <?php
             $disciplines = get_field('discipline-or-practice');
             if( $disciplines ): ?>
-            	<?php foreach( $disciplines as $discipline ): ?>
+            	<?php foreach( $disciplines as $discipline ):
+                $termSlug = $discipline->name;
+                $termSlugLower = strtolower($termSlug);
+                $termSlugReady = str_replace(' ', '-', $termSlugLower);
+                ?>
 
             		<p>
-            		<a href="<?php echo get_term_link( $discipline ); ?>"><?php echo $discipline->name; ?></a>
+            		<a href="/search-toolkits/?_sft_discipline-or-practice=<?php echo $termSlugReady ?>"><?php echo $discipline->name; ?></a>
                 </p>
 
             	<?php endforeach; ?>
@@ -127,9 +131,13 @@
           <?php
           $types = get_field('toolkit-type');
           if( $types ): ?>
-            <?php foreach( $types as $type ): ?>
+            <?php foreach( $types as $type ):
+              $termSlug = $type->name;
+              $termSlugLower = strtolower($termSlug);
+              $termSlugReady = str_replace(' ', '-', $termSlugLower);
+              ?>
               <p>
-              <a href="<?php echo get_term_link( $type ); ?>"><?php echo $type->name; ?></a>
+              <a href="/search-toolkits/?_sft_toolkit-type=<?php echo $termSlugReady ?>"><?php echo $type->name; ?></a>
               </p>
             <?php endforeach; ?>
           <?php endif; ?>
@@ -140,21 +148,29 @@
           <?php
           $features = get_field('toolkit-features');
           if( $features ): ?>
-            <?php foreach( $features as $feature ): ?>
+            <?php foreach( $features as $feature ):
+              $termSlug = $feature->name;
+              $termSlugLower = strtolower($termSlug);
+              $termSlugReady = str_replace(' ', '-', $termSlugLower);
+              ?>
               <p>
-              <a href="<?php echo get_term_link( $feature ); ?>"><?php echo $feature->name; ?></a>
+              <a href="/search-toolkits/?_sft_toolkit-features=<?php echo $termSlugReady ?>"><?php echo $feature->name; ?></a>
               </p>
             <?php endforeach; ?>
           <?php endif; ?>
         </div>
         <div class="meta-column col-md-3 col-sm-3 col-xs-6">
-          <h5>Country of Origin</h5>
+          <h5>Country/Territory</h5>
           <?php
           $countries = get_field('country-territory');
           if( $countries ): ?>
-            <?php foreach( $countries as $country ): ?>
+            <?php foreach( $countries as $country ):
+              $termSlug = $country->name;
+              $termSlugLower = strtolower($termSlug);
+              $termSlugReady = str_replace(' ', '-', $termSlugLower);
+              ?>
               <p>
-              <a href="<?php echo get_term_link( $country ); ?>"><?php echo $country->name; ?></a>
+              <a href="/search-toolkits/?_sft_country-territory=<?php echo $termSlugReady ?>"><?php echo $country->name; ?></a>
               </p>
             <?php endforeach; ?>
           <?php endif; ?>
@@ -172,9 +188,13 @@
           <?php
           $licenses = get_field('license');
           if( $licenses ): ?>
-            <?php foreach( $licenses as $license ): ?>
+            <?php foreach( $licenses as $license ):
+              $termSlug = $license->name;
+              $termSlugLower = strtolower($termSlug);
+              $termSlugReady = str_replace(' ', '-', $termSlugLower);
+              ?>
               <p>
-              <a href="<?php echo get_term_link( $license ); ?>"><?php echo $license->name; ?></a>
+              <a href="/search-toolkits/?_sft_license=<?php echo $termSlugReady ?>"><?php echo $license->name; ?></a>
               </p>
             <?php endforeach; ?>
           <?php endif; ?>
