@@ -2488,7 +2488,8 @@ h2.view-all-link {
 }
 
 #guide-header #skip-for-mobile,
-#article #show-for-mobile {
+#article #show-for-mobile,
+#show-for-mobile {
   max-width: 600px;
   line-height: 1.3em;
   font-size: 1em;
@@ -2497,7 +2498,7 @@ h2.view-all-link {
 }
 
 #no-results-message {
-  
+
 }
 
 #no-results-message p a,
