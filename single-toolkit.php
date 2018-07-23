@@ -191,7 +191,8 @@
             <?php foreach( $licenses as $license ):
               $termSlug = $license->name;
               $termSlugLower = strtolower($termSlug);
-              $termSlugReady = str_replace(' ', '-', $termSlugLower);
+              $termSlugReady = str_replace(' ', '-', $termSlugReady);
+              $termSlugReady = str_replace('/', '-', $termSlugLower);
               ?>
               <p>
               <a href="/search-toolkits/?_sft_license=<?php echo $termSlugReady ?>"><?php echo $license->name; ?></a>
