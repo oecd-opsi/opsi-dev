@@ -362,7 +362,7 @@
 
     <?php
 
-    comments_template(/comments-toolkit.php);
+    comments_template('/comments-toolkit.php');
 
 
     ?>
