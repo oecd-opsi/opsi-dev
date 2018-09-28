@@ -54,9 +54,12 @@ if ( post_password_required() )
 
     <?php endif; // have_comments() ?>
 
-    <?php comment_form(array('title_reply'=>'Add your review')); ?>
-    <?php comment_form(array('title_reply_after'=>'</h3><p>Have you used this toolkit? If so, what did you use it for and how did it work? What are its strengths and limitations? Share your experience so others can learn from you.</p>')); ?>
-    <?php comment_form(array('label_submit'=>'Submit review')); ?>
+    <?php comment_form(array(
+      'title_reply'=>'Add your review',
+      'title_reply_after'=>'</h3><p>Have you used this toolkit? If so, what did you use it for and how did it work? What are its strengths and limitations? Share your experience so others can learn from you.</p>',
+      'label_submit'=>'Submit review'
+    )); ?>
+    
 
 
 
