@@ -358,7 +358,6 @@
 
 
   <section id="all-comments" class="toolkit-section">
-    <h2>Comments</h2>
 
     <?php
 
